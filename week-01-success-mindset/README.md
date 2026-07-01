@@ -33,7 +33,10 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-Add your answer here...
+I believe that success is not determined only by talent or hard work, but by character, consistency, and how people treat others. 
+Many people focus on getting results at all costs, but I have come to believe that communication, empathy, and integrity are what sustain long term success.
+
+I also believe that setbacks are not always signs that you are on the wrong path. Sometimes they become the very experiences that shape your character, deepen your faith, and prepare you for greater responsibilities. That is why I choose to keep learning, improving, and treating people with respect, even when life does not go the way I expected.
 
 ---
 
@@ -55,11 +58,11 @@ Write each truth in this format:
 
 ### Truth
 
-Add your answer here...
+Clear communication prevents more problems than assumptions ever solve.
 
 ### Evidence from my life
 
-Add your answer here...
+Throughout my experience as a Project Coordinator and Executive Virtual Assistant, I learned that proactively communicating with clients, team members, and stakeholders kept projects moving smoothly and reduced misunderstandings. I also experienced firsthand how the absence of communication in a previous role led to an unexpected termination without prior discussion. That experience reinforced the importance of honest, timely communication in both leadership and teamwork.
 
 ---
 
@@ -67,11 +70,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Consistency produces better long term results than occasional bursts of motivation.
 
 ### Evidence from my life
 
-Add your answer here...
+While balancing software engineering studies, project management work, and continuous learning, I realized that making steady daily progress was more effective than waiting to feel motivated. Each time I remained consistent with my coursework, portfolio development, or certifications, I gained measurable progress and confidence, even during difficult seasons.
 
 ---
 
@@ -79,11 +82,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Every challenging experience teaches a lesson that improves future decisions if I choose to reflect instead of react.
 
 ### Evidence from my life
 
-Add your answer here...
+After losing a job that meant a lot to me, I spent time reflecting instead of becoming bitter. That experience changed how I view leadership, feedback, and team management. It also strengthened my commitment to communicate openly, document expectations clearly, and lead with empathy in my own professional career.
 
 ---
 
@@ -135,13 +138,29 @@ Include this line:
 
 ## Your Article
 
-Add your answer here...
+Four years ago, Henrietta made a decision that quietly transformed the direction of her life. Instead of allowing setbacks and disappointments to define her career, she committed herself to continuous learning, discipline, and consistent execution.
+
+Today, she is recognized as a Software Engineer, DevOps Professional, Project/Product Manager, and Operations Specialist who sets the pace for technlogies and businesses. Her unique combination of technical knowledge, project leadership, and process improvement has enabled her to contribute to products that serve thousands of users across different industries.
+
+Her journey was not built on shortcuts. While completing her Software Engineering degree and participating in professional programs such as the DevOps Micro Internship, she consistently developed practical skills through hands-on projects. Her GitHub portfolio evolved from small learning exercises into production-ready applications, infrastructure projects, automation scripts, and documented DevOps workflows. Alongside her technical portfolio, she continued publishing articles and documenting lessons learned from real-world project experiences.
+
+Professionally, Henrietta led cross-functional teams, coordinated software development projects, and implemented Agile practices that improved collaboration, delivery speed, and operational efficiency. Her ability to combine technical understanding with strong communication made her a trusted partner to developers, designers, stakeholders, and clients.
+
+Beyond her professional work, she became known for mentoring aspiring professionals entering project/product management and technology. Through LinkedIn, community events, and online learning platforms, she openly shared her experiences, encouraging others to embrace lifelong learning, resilience, and ethical leadership. Her willingness to discuss both successes and failures made her contributions authentic and relatable.
+
+Her certifications in project management, product management, cloud technologies, DevOps, and software engineering complemented years of practical experience. More importantly, her reputation was built on reliability, professionalism, integrity, and empathy. Qualities that clients and colleagues consistently recognized.
+
+Financially, she achieved greater stability by building multiple streams of professional income through full-time opportunities, consulting engagements, and freelance projects. This stability allowed her to continue investing in education, support meaningful causes, and create opportunities for others.
+
+Looking back, the career setback that once seemed devastating became one of the defining moments of her growth. It strengthened her resilience, deepened her faith, and shaped the kind of leader she chose to become. Rather than allowing disappointment to define her future, she used it as fuel to build a career grounded in excellence, continuous improvement, and service to others.
+
+Today, Henrietta's story is a reminder that success is rarely the result of one opportunity. It is built through consistent learning, disciplined execution, resilience during difficult seasons, and the courage to keep moving forward when the path is uncertain.
+
+**P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). You can start your DevOps journey by joining this [Discord community](https://discord.pravinmishra.com/) ( https://discord.pravinmishra.com/ ).**
 
 ### Public Link
 
-Paste your link here:
-
-`__________________________`
+https://medium.com/@harietogochukwu/my-2-0-version-5ec4b78c1060
 
 ---
 
@@ -173,7 +192,8 @@ If Yes:
 
 ## Answer
 
-Add your answer here...
+I have had moments where I questioned my own decisions after the outcome was not what I expected. Those experiences made me reflect deeply on whether I could have communicated better, sought clarification earlier, or approached situations differently.
+
 
 ---
 
@@ -199,16 +219,90 @@ Choose books that improve:
 
 ## Book List
 
-1. Add your answer here...
-2. Add your answer here...
-3. Add your answer here...
-4. Add your answer here...
-5. Add your answer here...
-6. Add your answer here...
-7. Add your answer here...
-8. Add your answer here...
-9. Add your answer here...
-10. Add your answer here...
+1. The Power of Focus for Women - Fran Hewitt & Les Hewitt
+![Assignment 5 Screenshot](screenshots/the-power-of-focus.jpg)
+
+
+
+
+
+
+
+2. The Phoenix Project — Gene Kim, Kevin Behr & George Spafford
+![Assignment 5 Screenshot](screenshots/the-phoenix-project.png)
+
+
+
+
+
+
+3. The Five Dysfunctions of a Team — Patrick Lencioni
+![Assignment 5 Screenshot](screenshots/the-five-dysfunctions-of-a-team.jpg)
+
+
+
+
+
+
+
+4. Deep Work — Cal Newport
+![Assignment 5 Screenshot](screenshots/deep-wrok.jpg)
+
+
+
+
+
+
+
+5. The Lean Startup — Eric Ries
+![Assignment 5 Screenshot](screenshots/the-lean-startup.jpg)
+
+
+
+
+
+
+6. Clean Code — Robert C. Martin
+![Assignment 5 Screenshot](screenshots/clean-code.jpg)
+
+
+
+
+
+
+
+7. The Psychology of Money — Morgan Housel
+![Assignment 5 Screenshot](screenshots/psy-of-money.jpg)
+
+
+
+
+
+
+8. Crucial Conversations — Kerry Patterson, Joseph Grenny, Ron McMillan & Al Switzler
+![Assignment 5 Screenshot](screenshots/crucial-conversations.png)
+
+
+
+
+
+
+
+
+
+
+9. The 7 Habits of Highly Effective People — Stephen R. Covey
+![Assignment 5 Screenshot](screenshots/The-7-habits-of-highly-effective-people.jpg)
+
+
+
+
+
+
+
+10. Secret the Power - Rhonda Byrne
+![Assignment 5 Screenshot](screenshots/The-Power-The-Secret.jpg)
+
 
 ---
 
@@ -237,16 +331,16 @@ List topics only. No need to share numbers.
 
 ## My Metrics
 
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
+* Learning hours per week (Software Engineering, DevOps, and continuous learning)
+* Projects completed and documented
+* Coursework progress and assignment completion
+* Deep work and focused study sessions
+* Sleep quality and hours of rest
+* Networking and professional outreach
+* Personal finances (income, savings, and monthly expenses)
+* Physical and emotional well-being (exercise, prayer, reflection, and stress management)
+* Professional certifications and new skills acquired
+* Weekly reflection and goal review
 
 ---
 
@@ -270,9 +364,9 @@ Examples:
 
 **Yes / No**
 
-Answer:
+Answer: Yes
 
-Add your answer here...
+I emptied everything that was occupying my mind, including my coursework, DevOps internship tasks, job search, portfolio improvements, GitHub projects, certifications, finances, family responsibilities, prayer intentions, pending messages, ideas for content creation, career goals, and personal development plans. Writing everything down helped me reduce mental clutter, organize my priorities, and focus on what truly deserves my attention instead of trying to remember everything.
 
 ---
 
@@ -290,7 +384,26 @@ Example:
 
 #### My Weekly Routine
 
-Add your answer here...
+Monday – Friday 
+
+Attend classes and stay up to date with my Software Engineering coursework.
+Complete one focused DevOps learning session.
+Spend time improving my portfolio or GitHub projects.
+End each day with a short review and plan for the next day.
+
+Saturday
+
+Attend the DevOps Micro Internship session.
+Review notes and complete any pending internship tasks.
+Update documentation and reflect on lessons learned.
+
+Sunday
+
+Weekly planning and review.
+Organize my study schedule for the coming week.
+Prayer, rest, and personal reflection.
+Spend quality time with family and recharge for the new week.
+
 
 ---
 
@@ -298,11 +411,11 @@ Add your answer here...
 
 #### When Will You Do DMI Work? (Days + Time)
 
-Add your answer here...
+Tuesday, Thursday, Saturday, and Sunday evenings (6:00 PM – 8:00 PM)
 
 #### How Many Sessions Per Week?
 
-Add your answer here...
+4 focused sessions per week
 
 ---
 
@@ -316,7 +429,13 @@ Examples:
 
 #### My Distraction Rules
 
-Add your answer here...
+* Keep my phone on Do Not Disturb during deep work sessions.
+* Check WhatsApp and social media only during scheduled breaks.
+* Avoid comparing my career journey with other people's progress.
+* Work from a clean and organized study environment.
+* Focus on completing one task before starting another.
+* Review my priorities every morning instead of reacting to distractions.
+* Protect my peace by limiting activities that trigger unnecessary self-doubt.
 
 ---
 
@@ -324,28 +443,27 @@ Add your answer here...
 
 ### Biggest insight I got about myself this week
 
-Add your answer here...
+I realized that my biggest obstacle is not a lack of ability but allowing disappointment and uncertainty to consume my focus. I have grown through difficult experiences, and I am learning that consistency, faith, and daily action are far more powerful than waiting for perfect circumstances. My future will be shaped more by the systems I build than by the setbacks I have experienced.
 
 ### My biggest weakness/loop I noticed
 
-Add your answer here...
+I tend to overthink situations that I cannot control, especially career and health setbacks. I replay past events in my mind, searching for explanations that may never come. This sometimes affects my focus, confidence, and emotional well-being. Going forward, I want to redirect that energy toward learning, building projects, and taking actions that move my career forward.
 
 ### One system I will implement from this week (exact habit + time)
 
-Add your answer here...
+Every evening between 7:00 - 10:00 PM, I will spend 15-30 minutes reviewing my day, writing down tomorrow's top three priorities, and expressing gratitude for one thing that went well. This habit will help me stay organized, reduce anxiety, and begin each new day with clarity and purpose.
 
 ### LinkedIn Post
 
 Paste your LinkedIn post link here:
-
-`__________________________`
+https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_today-i-challenged-myself-to-write-about-share-7477873623282835456-DLMw/
 
 ---
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **ADD LINK HERE**  
-- Blog / Medium : **ADD LINK HERE**  
+- LinkedIn Post URL: **https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_today-i-challenged-myself-to-write-about-share-7477873623282835456-DLMw/**  
+- Blog / Medium : **https://medium.com/@harietogochukwu/my-2-0-version-5ec4b78c1060?sharedUserId=harietogochukwu**  
 
 ---
 
