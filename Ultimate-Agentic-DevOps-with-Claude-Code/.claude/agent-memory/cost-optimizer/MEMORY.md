@@ -1,0 +1,3 @@
+- [CloudFront PriceClass Optimization](cloudfront_priceclass.md) — Downgrade PriceClass_200 to PriceClass_100 (30-50% savings)
+- [S3 Intelligent-Tiering Config](s3_intelligent_tiering.md) — Auto-transition infrequent objects to cheaper tiers (20-30% storage savings)
+- [CloudFront Cache TTL Optimization](cloudfront_cache_ttl.md) — Increase TTL for static content (10-30% origin request reduction)

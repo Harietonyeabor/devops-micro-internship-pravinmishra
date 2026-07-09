@@ -81,7 +81,6 @@ claude
 **Screenshots Required:**
 - Screenshot 1 — Terminal showing `claude --version` with the version number visible
 - Screenshot 2 — Claude Code authenticated and showing the terminal prompt 
-
 ---
 
 ### Task 2 — Fork and Clone the Starter Repository

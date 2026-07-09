@@ -1,0 +1,1 @@
+- [Terraform baseline & known gaps](project_terraform_baseline.md) — snapshot of terraform/ architecture + recurring security gaps as of 2026-07-08, diff future audits against this
