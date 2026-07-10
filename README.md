@@ -74,8 +74,8 @@ This is not a course. It is an internship-style program — real deployments, re
  Week 01 → Success Mindset 
  [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) 
 
-<!-- Week 02 → Agentic AI with Claude Code -->
-<!-- [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) -->
+! Week 02 → Agentic AI with Claude Code
+! [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) 
 
 <!-- Week 03 → Linux for DevOps -->
 <!-- [![Week 03 – Linux](./badges/week-03.svg)](./week-03-linux-for-devops/) -->
@@ -136,7 +136,7 @@ This is not a course. It is an internship-style program — real deployments, re
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-dmi-devops-activity-7424700877732732928-FK2D? | — |
 | 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_today-i-challenged-myself-to-write-about-activity-7477873624402604032-Y3gG? | https://medium.com/@harietogochukwu/my-2-0-version-5ec4b78c1060?sharedUserId=harietogochukwu |
-| 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
+| 02 | Agentic AI with Claude Code | | ✅ Completed |  ✅ Solved | https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_softwareengineering-devops-dmibypravinmishra-share-7481401004077432833-aCbq/? | https://medium.com/@harietogochukwu/reflection-week-2-the-week-i-stopped-using-ai-and-started-engineering-ai-workflows-7bff2c3bdcee?sharedUserId=harietogochukwu |
 | 03 | Linux for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Bash Scripting | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |

@@ -185,6 +185,7 @@ Use GitHub MCP to get the README.md file from <your-github-username>/Ultimate-Ag
 **Screenshots Required:**
 
 * Screenshot 5 — Claude's response showing the GitHub MCP tool call and the retrieved README.md content.
+![alt text](public-repos.png)
 
 ---
 

@@ -121,6 +121,7 @@ Your project should contain the Claude Code configuration structure:
 
 * Screenshot 1 — `.claude` folder structure visible in VS Code Explorer
 
+
 ---
 
 ### Task 2 — Create the UserPromptSubmit Hook Script

@@ -97,8 +97,6 @@ resource "aws_cloudfront_distribution" "website" {
     Project     = var.project_name
     Environment = var.environment
   }
-
-  depends_on = [aws_s3_bucket_policy.website]
 }
 
 # Data source for CachingOptimized managed cache policy

@@ -20,7 +20,8 @@ Capture Claude’s response before `CLAUDE.md` exists in the project to establis
 
 #### Screenshot 1 — Claude’s generic response before CLAUDE.md exists (project contains only `index.html`, `style.css`, `images/`, `README.MD`, `privacy.html`, `terms.html`)
 
-Add your screenshot here.
+![Before state](screenshots/starter-repo.png)
+
 
 ---
 
@@ -34,8 +35,13 @@ Generate an initial `CLAUDE.md` file using the `/init` command and review the au
 
 #### Screenshot 2 — The auto-generated CLAUDE.md open in VS Code showing its content
 
-Add your screenshot here.
-
+![init file](screenshots/claudemd1.png)
+![init file](screenshots/claudemd2.png)
+![init file](screenshots/claudemd3.png)
+![init file](screenshots/claudemd4.png)
+![init file](screenshots/claudemd5.png)
+![init file](screenshot/claudemd6.png)
+![init file](screenshot/claudemd7.png)
 ---
 
 # Task 3 — Customize the CLAUDE.md
@@ -48,7 +54,7 @@ Update the generated `CLAUDE.md` file by adding project-specific instructions ac
 
 #### Screenshot 3 — Your customized CLAUDE.md in VS Code showing all 5 sections (scroll to show the full file)
 
-Add your screenshot here.
+![5 sections](screenshots/5-sections.png)
 
 ---
 
@@ -62,13 +68,19 @@ Verify that Claude’s behavior changes after adding `CLAUDE.md` by running a ne
 
 #### Screenshot 4 — Claude's specific, detailed answer after reading CLAUDE.md (Claude mentioning S3, CloudFront and Terraform)
 
-Add your screenshot here.
+ ![Detailed Answer](<Screenshot 2026-07-07 235552.png>)
+![Detailed Answer](<Screenshot 2026-07-07 230146.png>) 
+![Detailed Answer](<Screenshot 2026-07-07 230247.png>) 
+![Detailed Answer](<Screenshot 2026-07-07 230347.png>) 
+![Detailed Answer](<Screenshot 2026-07-07 230441.png>) 
+![Detailed Answer](<Screenshot 2026-07-07 230534.png>) 
+![Detailed Answer](<Screenshot 2026-07-07 230628.png>)
 
 ---
 
 #### Screenshot 5 — Claude refusing or warning against adding React because of the "No JavaScript" convention defined in CLAUDE.md
 
-Add your screenshot here.
+Add your screenshot here. ![Refusing Javascript](<Screenshot 2026-07-08 001243.png>)
 
 ---
 
@@ -82,7 +94,7 @@ Commit the `CLAUDE.md` file and push it to your GitHub fork so the project instr
 
 #### Screenshot 6 — `CLAUDE.md` visible in your GitHub repository after pushing the commit
 
-Add your screenshot here.
+![github commit](<Screenshot 2026-07-08 003503.png>)
 
 ---
 
@@ -98,7 +110,7 @@ Add your screenshot here.
 
 Paste your forked repository URL here:
 
-`__________________________`
+`https://github.com/Harietonyeabor/Ultimate-Agentic-DevOps-with-Claude-Code`
 
 ---
 
