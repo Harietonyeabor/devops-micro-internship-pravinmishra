@@ -254,7 +254,7 @@ P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by 
 
 ### LinkedIn Post Link:
 
-`https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_softwareengineering-devops-dmibypravinmishra-share-7481401004077432833-aCbq/?`
+[https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_softwareengineering-devops-dmibypravinmishra-share-7481401004077432833-aCbq/?]
 
 ---
 
@@ -270,15 +270,15 @@ P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by 
 
 # Completion Checklist
 
-* [ ] Blog written with required structure
-* [ ] Blog includes at least 2–3 Week 2 topics
-* [ ] Blog is publicly accessible
-* [ ] LinkedIn post created
-* [ ] Required P.S. line included
-* [ ] LinkedIn post content copied in submission field
-* [ ] Blog link added
-* [ ] LinkedIn post link added
-* [ ] Screenshots added to GitHub repo
+* [✅] Blog written with required structure
+* [✅] Blog includes at least 2–3 Week 2 topics
+* [✅] Blog is publicly accessible
+* [✅] LinkedIn post created
+* [✅] Required P.S. line included
+* [✅] LinkedIn post content copied in submission field
+* [✅] Blog link added
+* [✅] LinkedIn post link added
+* [✅] Screenshots added to GitHub repo
 
 ---
 
