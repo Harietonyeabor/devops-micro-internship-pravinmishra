@@ -98,7 +98,7 @@ Week-2 contains 8 assignments
 
 | Assignment   | Name                                         | Correct Task Execution | Screenshots / Proof | LinkedIn Post | Total |
 | ------------ | -------------------------------------------- | ---------------------- | ------------------- | ------------- | ----- |
-| Assignment-1 | Your First Agentic Session                   | 10                     | 5                   | —             | 15    |
+| Assignment-1 | Your First Agentic Session                   | 10                     | 5                   | —             | 15    | 
 | Assignment-2 | Teaching Claude Your Project (CLAUDE.md)     | 15                     | 5                   | —             | 20    |
 | Assignment-3 | Building Your Command Center (Skills)        | 20                     | 5                   | 20             | 45    |
 | Assignment-4 | Building Your AI Team (Subagents)            | 15                     | 5                   |             | 20    |
