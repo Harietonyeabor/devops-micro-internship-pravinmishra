@@ -427,7 +427,7 @@ The final script combines variables to store user information, an array to store
 
 Paste your LinkedIn post URL here:
 
-`__________________________`
+`Add your URL here`
 
 ---
 

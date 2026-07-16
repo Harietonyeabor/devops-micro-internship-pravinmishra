@@ -160,7 +160,13 @@ Today, Henrietta's story is a reminder that success is rarely the result of one 
 
 ### Public Link
 
+<<<<<<< HEAD
 https://medium.com/@harietogochukwu/my-2-0-version-5ec4b78c1060
+=======
+Paste your link here:
+
+`Add your URL here`
+>>>>>>> upstream/main
 
 ---
 
@@ -456,7 +462,12 @@ Every evening between 7:00 - 10:00 PM, I will spend 15-30 minutes reviewing my d
 ### LinkedIn Post
 
 Paste your LinkedIn post link here:
+<<<<<<< HEAD
 https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_today-i-challenged-myself-to-write-about-share-7477873623282835456-DLMw/
+=======
+
+`Add your URL here`
+>>>>>>> upstream/main
 
 ---
 

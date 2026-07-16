@@ -90,14 +90,22 @@ Add your screenshot here. ![/tf-plan](assig-3-scrn-6.png)
 
 Paste your forked repository URL here:
 
+<<<<<<< HEAD
 `https://github.com/Harietonyeabor/Ultimate-Agentic-DevOps-with-Claude-Code`
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 
 ## LinkedIn post URL
 `https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_dmi-dmibypravinmishra-agenticai-activity-7480713653739188225-G1Du?`
 
 Paste your forked repository URL here:
 
+<<<<<<< HEAD
 `https://github.com/Harietonyeabor/Ultimate-Agentic-DevOps-with-Claude-Code`
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 ---
 
 # Completion Checklist
