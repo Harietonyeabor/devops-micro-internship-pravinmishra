@@ -406,7 +406,7 @@ Terminating unused instances prevents unnecessary billing charges, conserves clo
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`__________________________`
 
 ---
 

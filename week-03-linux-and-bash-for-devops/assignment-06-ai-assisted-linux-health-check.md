@@ -472,7 +472,7 @@ Add your answer here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`__________________________`
 
 ---
 
@@ -486,7 +486,7 @@ Add your screenshot here.
 
 Paste the URL of your GitHub folder or repository containing the assignment files here:
 
-`Add your URL here`
+`__________________________`
 
 ---
 
