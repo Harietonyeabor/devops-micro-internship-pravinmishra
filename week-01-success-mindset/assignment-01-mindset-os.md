@@ -462,12 +462,21 @@ Every evening between 7:00 - 10:00 PM, I will spend 15-30 minutes reviewing my d
 ### LinkedIn Post
 
 Paste your LinkedIn post link here:
-<<<<<<< HEAD
-https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_today-i-challenged-myself-to-write-about-share-7477873623282835456-DLMw/
+Today, I challenged myself to write about the future I envision for my career.
+
+It was more than just an assignment, it was an opportunity to reflect on who I'm becoming and the kind of professional I want to be.
+
+I'm trusting that, with God's guidance, consistency, and intentional effort, that vision will become reality.
+
+A big thank you to the DevOps Micro Internship (DMI) for encouraging this kind of reflection.
+
+I've shared the full article on Medium, the link is in the comments. I'd love for you to read it and share your thoughts.
+
+P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by [Pravin Mishra](https://lnkd.in/eWYu4_6p). You can start your DevOps journey by joining [DMI waiting list](https://lnkd.in/dgM7U_UV)
 =======
 
 `Add your URL here`
->>>>>>> upstream/main
+https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_today-i-challenged-myself-to-write-about-share-7477873623282835456-DLMw/>>>>>>> upstream/main
 
 ---
 
