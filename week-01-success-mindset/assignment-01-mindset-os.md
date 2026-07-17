@@ -167,7 +167,7 @@ Paste your link here:
 
 `Add your URL here`
 >>>>>>> upstream/main
-
+https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_today-i-challenged-myself-to-write-about-activity-7477873624402604032-Y3gG?
 ---
 
 # Assignment 4. Have you ever cut corners (unethical / dishonest / shortcut behavior — not necessarily illegal)? If yes, how did it make you feel?

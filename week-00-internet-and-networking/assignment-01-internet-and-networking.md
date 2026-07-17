@@ -25,7 +25,7 @@ Take a screenshot of your interaction showing:
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![Task 1 Screenshot](screenshots/task-1-chatgpt.png)
+![alt text](IMG_20260717_090240.jpg)
 
 
 Replace `task-1-chatgpt.png` with your actual screenshot file name.
@@ -34,7 +34,7 @@ Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+I learned that protocols is a set of rules that devices follow to communicate with each other.
 
 ---
 
@@ -57,9 +57,17 @@ Write a short explanation (**100–150 words**) that includes:
 
 💡 **Tip:** You may use ChatGPT (as demonstrated in Task 1) to refine your explanation.
 
-## Answer
+## 
 
-Add your answer here...
+When a user anywhere in the world visits EpicReads, their device sends a request over the internet using packet switching i.e. data splitting and reassembling. This means the request/data is broken into small packets, each of which may take different routes across the network to reach the server in Finland.
+
+Every device involved has an IP address (unique address), which works like a digital home address, ensuring packets know where to go and where to return. 
+
+Communication follows the TCP/IP model: IP handles addressing and routing, while TCP ensures packets arrive correctly, in order, and without loss.
+
+When users type EpicReads’ web address, their browser uses HTTP or HTTPS to request the website content. HTTPS adds encryption, keeping user data secure. Once all packets arrive, the browser reassembles them and displays the bookstore seamlessly.
+
+
 
 ---
 
@@ -91,8 +99,7 @@ EpicReads bookstore has two application versions:
 
 Save your diagram image in the `screenshots` folder and update the file name below.
 
-![Application Architecture Diagram](screenshots/task-3-diagram.png)
-
+![Application Architecture Diagram](IMG_20260717_090353.jpg)
 
 Replace `task-3-diagram.png` with your actual diagram file name.
 
@@ -102,18 +109,18 @@ Replace `task-3-diagram.png` with your actual diagram file name.
 
 ### Frontend
 
-* Add your answer here...
-* Add your answer here...
+* Next.js
+* Tailwind CSS
 
 ### Backend
 
-* Add your answer here...
-* Add your answer here...
+* Node.js
+* JWT (for Authentication)
 
 ### Database
 
-* Add your answer here...
-* Add your answer here...
+* Mysql
+
 
 ---
 
@@ -142,7 +149,10 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+1. DNS (Domain Name System) is like the internet’s phonebook where domain names are stored. It translates human-friendly domain names such as epicreads.com into numerical IP addresses that computers use to locate servers.
+
+2. To connect epicreads.com to the IP 52.172.142.222, record should be used. A record maps a domain name directly to an IPv4 address, allowing users to access the bookstore using the domain instead of the numeric IP.
+
 
 ---
 
@@ -178,7 +188,7 @@ ls
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![VS Code Setup Screenshot](screenshots/task-5-vscode.png)
+![VS Code Setup Screenshot](IMG_20260717_090423.jpg)
 
 
 Replace `task-5-vscode.png` with your actual screenshot file name.
@@ -215,10 +225,11 @@ Add the following credit note at the end of your post:
 
 ## LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
+ https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-dmi-devops-activity-7424700877732732928-FK2D? 
 
 ```text
-Add your URL here...
+ https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-dmi-devops-activity-7424700877732732928-FK2D? 
+
 ```
 
 ---
@@ -227,7 +238,63 @@ Add your URL here...
 
 Paste the full text of your LinkedIn post here:
 
-Add your post content here...
+I took another bold step 🤸💪
+
+
+hashtag#DevOps wasn't another tech buzzword.
+It’s the reason most apps don’t fall apart.
+
+A few weeks ago, I wasn’t planning to start a DevOps journey at all.
+
+Then I kept hearing Oladayo Aremu talk about it.
+
+Listening to him made one thing obvious:
+DevOps isn’t just about tools.
+It’s also about how software survives in the real world.
+
+So when Cohort 3 hashtag#DMI (DevOps Micro Internship) began orientation, I jumped in.
+
+This isn’t the usual “watch videos and move on” experience.
+It’s practical. It’s demanding. 
+And it requires you to intentionally dedicate hours every week and actually think.
+
+My first lesson...
+The internet is not magic.
+
+When you visit a website, your request doesn’t magically appear on a server.
+It’s broken into small pieces called packets, guided by IP addresses, and controlled by strict rules called protocols.
+
+Think of it like traffic on a busy road.
+Without rules, nothing moves.
+
+That’s where things like HTTP, HTTPS, TCP/IP, DNS come in. They’re the traffic rules of the internet.
+
+We type names like #LinkedIn.com because as humans we understand it better, machines understand numbers.
+
+DNS acts like the internet’s phonebook, translating those names into numbers machines can understand.
+
+Then came environment setup, terminals, and understanding how apps are structured:
+
+How frontend, backend, and database talk to each other.
+
+DevOps is teaching me this: 
+👉 Software is not just built it’s maintained 
+👉 Reliability matters as much as features 
+👉 Good systems reduce chaos, not people
+
+Sometimes growth doesn’t come from a grand plan.
+I’m glad I said yes when this opportunity came.
+
+This is just the beginning of hashtag#Devops Journey for me.
+Stick around, let’s walk this path together.
+
+P.S. This post is part of the FREE DevOps Micro Internship Cohort run by Pravin Mishra .
+You can start your DevOps journey for free from his YouTube playlist.
+
+🖼️ https://lnkd.in/dAH7V9JZ
+
+hashtag#DevOpsJourney hashtag#ProductManagement hashtag#SoftwareEngineering hashtag#TechGrowth
+hashtag#CloudComputing hashtag#VSCode hashtag#Projectmanagement
 
 ---
 
@@ -235,19 +302,19 @@ Add your post content here...
 
 ### What did you find easy?
 
-Add your answer here...
+I found the topic easy protocol in networking easy using real life examples.
 
 ---
 
 ### What was difficult?
 
-Add your answer here...
+Drawing the diagram on draw.io but i later used an alternative.
 
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
+Getting more familiar with all the concepts on week 00 Assignment.
 
 ---
 
