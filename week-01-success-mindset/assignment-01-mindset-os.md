@@ -160,14 +160,12 @@ Today, Henrietta's story is a reminder that success is rarely the result of one 
 
 ### Public Link
 
-<<<<<<< HEAD
-https://medium.com/@harietogochukwu/my-2-0-version-5ec4b78c1060
+`https://medium.com/@harietogochukwu/my-2-0-version-5ec4b78c1060`
 =======
 Paste your link here:
 
-`Add your URL here`
->>>>>>> upstream/main
-https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_today-i-challenged-myself-to-write-about-activity-7477873624402604032-Y3gG?
+`https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_today-i-challenged-myself-to-write-about-activity-7477873624402604032`
+
 ---
 
 # Assignment 4. Have you ever cut corners (unethical / dishonest / shortcut behavior — not necessarily illegal)? If yes, how did it make you feel?
@@ -475,8 +473,8 @@ I've shared the full article on Medium, the link is in the comments. I'd love fo
 P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by [Pravin Mishra](https://lnkd.in/eWYu4_6p). You can start your DevOps journey by joining [DMI waiting list](https://lnkd.in/dgM7U_UV)
 =======
 
-`Add your URL here`
-https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_today-i-challenged-myself-to-write-about-share-7477873623282835456-DLMw/>>>>>>> upstream/main
+`https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_today-i-challenged-myself-to-write-about-share-7477873623282835456`
+
 
 ---
 

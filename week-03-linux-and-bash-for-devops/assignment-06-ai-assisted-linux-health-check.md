@@ -20,13 +20,13 @@ Confirm that Nginx and the React application are healthy before building the aut
 
 #### Screenshot 1 — Output of `systemctl is-active nginx`, `ss -ltn | grep ':80'`, and `curl -I http://localhost`
 
-Add your screenshot here.
+![alt text](output-scn1-ass6wk3.png)
 
 ---
 
 #### Screenshot 2 — Output of `pwd` and `find . -maxdepth 4 -type d | sort` showing the workspace folder structure
 
-Add your screenshot here.
+![alt text](pwd-output.png)
 
 ---
 
@@ -36,19 +36,19 @@ Answer the following in your own words:
 
 **1. What proves that Nginx is running?**
 
-Add your answer here.
+The systemctl is-active nginx command returns active, showing that the Nginx service is currently running and managed by systemd.
 
 ---
 
 **2. What proves that the server is listening for HTTP traffic?**
 
-Add your answer here.
+The command ss -ltn | grep ':80' shows that port 80 is in the LISTEN state, meaning the server is ready to accept HTTP requests.
 
 ---
 
 **3. Why must you capture a healthy baseline before simulating an incident?**
 
-Add your answer here.
+A healthy baseline shows the normal state of the server before any changes are made. It makes it easier to compare results during troubleshooting and confirm whether the system has recovered after an incident.
 
 ---
 
@@ -62,7 +62,7 @@ Tell Claude exactly what this project does and what it is not allowed to do.
 
 #### Screenshot 3 — CLAUDE.md open in VS Code showing all four sections (Project Overview, Incident Workflow, Safety Rules, Output Rules)
 
-Add your screenshot here.
+![alt text](project-sections.png)
 
 ---
 
@@ -72,19 +72,19 @@ Answer the following in your own words:
 
 **1. Why should Claude receive project-specific operational rules?**
 
-Add your answer here.
+Project-specific operational rules help Claude understand the environment, objectives, and safety requirements. This allows it to provide accurate recommendations while avoiding actions that could damage the system or interrupt production services.
 
 ---
 
 **2. Why is the human required to execute the recovery command?**
 
-Add your answer here.
+The human is responsible for executing recovery commands because production systems require human approval before making changes. This reduces the risk of accidental outages or incorrect automated actions.
 
 ---
 
 **3. Which rule prevents Claude from making an unsupported diagnosis?**
 
-Add your answer here.
+The Output Rule that instructs Claude to base its conclusions only on collected evidence and never make unsupported assumptions prevents inaccurate diagnoses.
 
 ---
 
@@ -98,7 +98,7 @@ Use Claude Code to inspect the environment and produce a read-only plan before c
 
 #### Screenshot 4 — Claude Code showing the five-check plan and read-only inspection results
 
-Add your screenshot here.
+![alt text](5-triage.png)
 
 ---
 
@@ -108,19 +108,26 @@ Answer the following in your own words:
 
 **1. Which part of this task represents the Gather phase?**
 
-Add your answer here.
+The Gather phase is when Claude uses read-only Linux commands to collect information about the server, such as the Nginx service status, open ports, HTTP response, memory usage, and disk usage. This evidence is collected before any analysis is performed.
 
+The portion where Claude Code reads active infrastructure properties, scans system configs, and checks existing directory structures using read-only execution tools before compiling its summary.
+
+The read-only inspection of the Ubuntu server represents the Gather phase. Claude uses commands to collect information about Nginx, port 80, the HTTP response, disk usage, and available memory.
 ---
 
 **2. Did Claude follow the instruction not to create files? How did you verify this?**
 
-Add your answer here.
+Yes. Claude only inspected the system using read-only commands and produced a health check plan. It did not create, modify, or delete any files, which confirmed that it followed the instructions.
+
+Yes. I verified this by running git status or ls right after the tool session to confirm no uncommitted temporary files or script text layers were written to the workspace storage tracking index.
 
 ---
 
 **3. Why is planning before coding useful in DevOps automation?**
 
-Add your answer here.
+Planning helps identify all the required checks before writing the script. It reduces mistakes, improves script design, and ensures that important system checks are not forgotten during implementation.
+
+It systematically maps out structural dependencies, variables, and potential edge-case failures ahead of time, preventing developers from hardcoding bad variables or building fragmented scripts that crash mid-execution.
 
 ---
 
