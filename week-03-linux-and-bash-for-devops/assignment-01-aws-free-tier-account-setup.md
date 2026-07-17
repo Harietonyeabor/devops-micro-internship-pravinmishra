@@ -42,11 +42,11 @@ Accounts created before July 15, 2025 fall under the Legacy Free Tier, which las
 * Duration is 12 Months for Legacy accounts, it covers promotional $200 credits on new 6-month Free Plans.
 
 2. Amazon S3 - Cloud Storage
-This offers free usage limit of 5 GB of standard storage +20,000 GET requests, +2000 PUT requests per months.
-The duration is 12 Months for Legacy accounts, Always free tier also exists with lower limits.
+* This offers free usage limit of 5 GB of standard storage +20,000 GET requests, +2000 PUT requests per months.
+* The duration is 12 Months for Legacy accounts, Always free tier also exists with lower limits.
 3. AWS Lambda (Serverless Compute):
-It has usage limit of 1 Million  requests per month + 400,000 GB-seconds of compute time per month.
-The duration of Always Free does not expire as long as you stay within limits.
+* It has usage limit of 1 Million  requests per month + 400,000 GB-seconds of compute time per month.
+* The duration of Always Free does not expire as long as you stay within limits.
 
 ---
 

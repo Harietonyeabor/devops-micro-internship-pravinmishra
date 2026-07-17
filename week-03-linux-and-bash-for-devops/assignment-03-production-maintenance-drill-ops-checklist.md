@@ -103,7 +103,10 @@ If Nginx fails to restart, web requests targeting Port 80 will drop, leading to 
 
 **2. What's your basic rollback plan?**
 
-Write your answer here.
+Before making any configuration change, always run sudo nginx -t first to validate the config syntax — this catches most errors before they ever reach a restart. If a restart is attempted and fails, the first step is to check systemctl status nginx --no-pager and sudo journalctl -u nginx --no-pager -n 50 to see the exact error.
+
+ If the failure is due to a bad configuration change, the fix is to revert the config file back to its last known-good version (ideally from a backup or version control) and re-run sudo nginx -t followed by sudo systemctl restart nginx again. Keeping a backup copy of the working config before making changes is the simplest safeguard, since it allows an immediate rollback without needing to debug under pressure.
+
 
 ---
 
@@ -281,9 +284,7 @@ Answer the following in your own words:
 
 **1. What caused the configuration failure?**
 
-A syntax error in /etc/nginx/sites-available/default (such as a missing semicolon or invalid directive), breaking Nginx's parser.
-
- Two missing semicolons in /etc/nginx/sites-available/default — one intentionally removed from the try_files $uri /index.html; directive as instructed, and a second one found missing from the error_page 404 /index.html; line. Either missing semicolon alone was enough to make Nginx's parser unable to correctly interpret the server block, causing a syntax error.
+A syntax error in /etc/nginx/sites-available/default (such as a missing semicolon and invalid directive), breaking Nginx's parser.
 ---
 
 **2. How did you fix the issue?**
@@ -296,11 +297,10 @@ A syntax error in /etc/nginx/sites-available/default (such as a missing semicolo
 
 Always run nginx -t after any config edit, without exception, before restarting or reloading.
 Keep Nginx config files in version control (git), so a bad change can be instantly reverted to a known-good state instead of manually retyped from memory.
-Use a staging environment to test config changes before they ever touch production.
+
+By using a staging environment to test config changes before they ever touch production.
 Where possible, automate config validation as part of a deployment pipeline, so a broken config is caught in CI and never reaches the live server at all.
 
-ai
-Always run nginx -t in CI/CD pipelines prior to applying changes, automate configuration updates via tools like Ansible/Terraform, and perform blue/green or canary deployments instead of editing live production configurations manually.
 
 ---
 
@@ -314,13 +314,13 @@ Simulate missing deployment content and recover the application safely.
 
 #### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-![alt text](error-200.png)
+![output of curl ono-200 response](error-200.png)
 
 ---
 
 #### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-![alt text](200-ok-back.png)
+![200 ok output](200-ok-back.png)
 
 ---
 
@@ -344,7 +344,9 @@ Answer the following in your own words:
 
 Automated pre-deployment backups, so every release can be instantly rolled back without manual intervention.
 Deploying to a versioned, separate directory and atomically switching a symlink (e.g., /var/www/current) to point to it, rather than overwriting the live directory in place — this way a failed deploy never leaves the live path empty or half-written.
+
 CI/CD pipeline checks that verify a deployment actually succeeded (e.g., confirming index.html exists and is non-empty) before marking the release complete.
+
 Post-deployment health checks/monitoring that automatically verify the live site returns a healthy 200 response immediately after every deploy, catching this kind of failure within seconds rather than relying on someone noticing manually.
 
 
@@ -384,15 +386,11 @@ systemctl enable nginx ensures that Nginx automatically starts up whenever the s
 
 **4. What are the risks of sharing secrets, keys, or credentials publicly?**
 
-Exposing credentials publicly can lead to unauthorized access, data breaches, financial loss, and compromised cloud resources.
-
 Exposed credentials allow unauthorized actors to hijack cloud resources, steal sensitive data, alter production code, or generate massive unauthorized infrastructure costs
 
 ---
 
 **5. Why should cloud resources be stopped or terminated when they are no longer needed?**
-
-Stopping or terminating unused cloud resources prevents unnecessary costs and reduces the security risk of unused infrastructure.
 
 Terminating unused instances prevents unnecessary billing charges, conserves cloud resources, and eliminates unmonitored security targets.
 
@@ -406,13 +404,14 @@ Terminating unused instances prevents unnecessary billing charges, conserves clo
 
 Paste your LinkedIn post URL here:
 
-`__________________________`
+`
+https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_dmibypravinmishra-devops-aws-activity-7483049531161448448__________________________`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![Linkedin Screenshot](production-post.png)
 
 ---
 
@@ -426,17 +425,17 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Screenshots (browser, ip a, ss -tulpen, ufw status) + Notes answered
-- [ ] Task 2: Screenshots (nginx status, nginx -t, ss port 80) + Notes answered
-- [ ] Task 3: Screenshots (access log, error log, journalctl) + Notes answered
-- [ ] Task 4: Screenshots (uptime, free -h, df -h, du -sh) + Notes answered
-- [ ] Task 5: Screenshots (ls html, grep deployed by, grep try_files) + Notes answered
-- [ ] Task 6: Screenshots (nginx -t fail, nginx -t pass, curl recovery) + Notes answered
-- [ ] Task 7: Screenshots (curl failure, curl recovery) + Notes answered
-- [ ] Task 8: Security & Reliability Notes answered
-- [ ] LinkedIn post published and URL submitted
-- [ ] Full Name visible in all required screenshots
-- [ ] No sensitive data exposed
+- [✅] Task 1: Screenshots (browser, ip a, ss -tulpen, ufw status) + Notes answered
+- [✅] Task 2: Screenshots (nginx status, nginx -t, ss port 80) + Notes answered
+- [✅] Task 3: Screenshots (access log, error log, journalctl) + Notes answered
+- [✅] Task 4: Screenshots (uptime, free -h, df -h, du -sh) + Notes answered
+- [✅] Task 5: Screenshots (ls html, grep deployed by, grep try_files) + Notes answered
+- [✅] Task 6: Screenshots (nginx -t fail, nginx -t pass, curl recovery) + Notes answered
+- [✅] Task 7: Screenshots (curl failure, curl recovery) + Notes answered
+- [✅] Task 8: Security & Reliability Notes answered
+- [✅] LinkedIn post published and URL submitted
+- [✅] Full Name visible in all required screenshots
+- [✅] No sensitive data exposed
 
 ---
 

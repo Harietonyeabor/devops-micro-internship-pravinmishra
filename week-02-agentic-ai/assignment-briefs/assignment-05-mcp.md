@@ -163,9 +163,19 @@ Each task must be completed sequentially.
 **Goal:** Prove the MCP connection works by asking Claude to retrieve real data from GitHub using the GitHub MCP server.
 
 **Steps:**
+<<<<<<< Updated upstream:week-02-agentic-ai/assignment-briefs/assignment-05-mcp.md
 
 1. In Claude Code, run the following prompt:
 
+=======
+1. In Claude Code, ask: `"List all my GitHub repositories"`
+2. Watch Claude use the GitHub MCP tool to fetch live data from your actual account
+3. The response will include your real repositories — not guessed content
+git push origin main
+**Commands (in Claude Code):**
+```
+List all my GitHub repositories.
+>>>>>>> Stashed changes:week-02-agentic-ai/assignments/assignment-05-mcp.md
 ```
 
 Use GitHub MCP to get the README.md file from <your-github-username>/Ultimate-Agentic-DevOps-with-Claude-Code
