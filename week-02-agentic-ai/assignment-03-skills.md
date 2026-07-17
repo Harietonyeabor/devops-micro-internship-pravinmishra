@@ -40,7 +40,7 @@ Place all required skill files into their correct directories and verify their c
 
 #### Screenshot 3 — Screenshot 3 — `tf-plan/SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no Write) and `disable-model-invocation: true`
 
-Add your screenshot here. ![frontmatter](screenshots/assig-3-screensht-3.png)
+![frontmatter](screenshots/assig-3-screensht-3.png)
 
 ---
 
@@ -54,13 +54,13 @@ Execute the `/scaffold-terraform` skill to generate a full Terraform infrastruct
 
 #### Screenshot 4 — Claude's response showing the scaffold complete with the file list
 
-Add your screenshot here.![scafford response](screenshots/assg-5-scr-5.png)
+[scafford response](screenshots/assg-5-scr-5.png)
 
 ---
 
 #### Screenshot 5 — VS Code sidebar showing the `terraform/` folder with all generated files inside
 
-Add your screenshot here. ![terraform folder](screenshots/assig-3-sc-4.png)
+![terraform folder](screenshots/assig-3-sc-4.png)
 
 ---
 
@@ -74,7 +74,7 @@ Initialize Terraform and execute the `/tf-plan` skill to observe plan execution 
 
 #### Screenshot 6 — Claude's `/tf-plan` response showing it ran the command and analyzed the result (pass or auth error both count)
 
-Add your screenshot here. ![/tf-plan](assig-3-scrn-6.png)
+![/tf-plan](assig-3-scrn-6.png)
 
 ---
 

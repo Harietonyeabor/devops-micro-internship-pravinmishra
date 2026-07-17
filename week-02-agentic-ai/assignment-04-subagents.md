@@ -20,7 +20,7 @@ Create the `.claude/agents/` directory and add all required agent files.
 
 #### Screenshot 1 — VS Code sidebar showing `.claude/agents/` with all 3 files
 
-Add your screenshot here.  ![claude agents](screenshots/assig-scren-1.png)
+![claude agents](screenshots/assig-scren-1.png)
 
 ---
 
