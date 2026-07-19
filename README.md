@@ -131,11 +131,11 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-dmi-devops-activity-7424700877732732928 | https://medium.com/@harietogochukwu/from-clicking-websites-to-understanding-the-internet-my-networking-journey-3d8923dd29e2 |
-| 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_today-i-challenged-myself-to-write-about-activity-7477873624402604032 | https://medium.com/@harietogochukwu/my-2-0-version-5ec4b78c1060?sharedUserId=harietogochukwu |
-| 02 | Agentic AI with Claude Code | ✅ Completed |  ✅ Solved | https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_softwareengineering-devops-dmibypravinmishra-share-7481401004077432833 | https://medium.com/@harietogochukwu/reflection-week-2-the-week-i-stopped-using-ai-and-started-engineering-ai-workflows-7bff2c3bdcee?sharedUserId=harietogochukwu |
-| 03 | Linux for DevOps | ✅ Completed | ✅ Completed |  https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_dmibypravinmishra-devops-agenticai-activity-7483907177049382913| 
-https://medium.com/@harietogochukwu/from-bash-scripts-to-ai-assisted-incident-response-building-my-first-linux-triage-workflow-826623be9e02  |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | [Week00-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-dmi-devops-activity-7424700877732732928-FK2D?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi) | [Week00-Blog](https://medium.com/@harietogochukwu/from-clicking-websites-to-understanding-the-internet-my-networking-journey-3d8923dd29e2) |
+| 01 | Success Mindset | ✅ Completed | ✅ Solved | [Week01-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_today-i-challenged-myself-to-write-about-activity-7477873624402604032-Y3gG?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi) | [Week01-Blog](https://medium.com/@harietogochukwu/my-2-0-version-5ec4b78c1060) |
+| 02 | Agentic AI with Claude Code | ✅ Completed |  ✅ Solved | [Week02-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_dmi-dmibypravinmishra-agenticai-activity-7480713653739188225-G1Du?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi) | [Week02-Blog](https://medium.com/@harietogochukwu/reflection-week-2-the-week-i-stopped-using-ai-and-started-engineering-ai-workflows-7bff2c3bdcee) |
+| 03 | Linux for DevOps | ✅ Completed | ✅ Completed |  [Week03-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_dmibypravinmishra-devops-aws-activity-7483276192813322240-gYiZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi)| 
+[Week03-Blog](https://medium.com/@harietogochukwu/reflection-week-2-the-week-i-stopped-using-ai-and-started-engineering-ai-workflows-7bff2c3bdcee)|
 | 04 | Bash Scripting | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
@@ -185,3 +185,11 @@ If you found this repo useful or want to follow my DevOps journey:
 - 🔗 Connect with me on [LinkedIn](#)
 - 🌐 Learn more about the program: https://dmi.pravinmishra.com
 - 💬 Join the community: https://discord.pravinmishra.com
+
+
+
+
+https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-dmi-devops-activity-7424700877732732928-FK2D?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU
+
+
+https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_today-i-challenged-myself-to-write-about-activity-7477873624402604032-Y3gG?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU
