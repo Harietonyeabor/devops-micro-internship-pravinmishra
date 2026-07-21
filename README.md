@@ -80,8 +80,8 @@ This is not a course. It is an internship-style program — real deployments, re
  Week 03 → Linux & Bash for DevOps
 [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) 
 
-<!-- Week 04 → Git & GitHub -->
-<!-- [![Week 04 – Git](./badges/week-04.svg)](./week-04-github/) -->
+ Week 04 → Git & GitHub 
+[![Week 04 – Git](./badges/week-04.svg)](./week-04-github/) 
 
 <!-- Week 05 → DevOps Lifecycle & Agile -->
 <!-- [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) -->
@@ -135,17 +135,16 @@ This is not a course. It is an internship-style program — real deployments, re
 | 01 | Success Mindset | ✅ Completed | ✅ Solved | [Week01-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_today-i-challenged-myself-to-write-about-activity-7477873624402604032-Y3gG?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi) | [Week01-Blog](https://medium.com/@harietogochukwu/my-2-0-version-5ec4b78c1060) |
 | 02 | Agentic AI with Claude Code | ✅ Completed |  ✅ Solved | [Week02-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_dmi-dmibypravinmishra-agenticai-activity-7480713653739188225-G1Du?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi) | [Week02-Blog](https://medium.com/@harietogochukwu/reflection-week-2-the-week-i-stopped-using-ai-and-started-engineering-ai-workflows-7bff2c3bdcee) |
 | 03 | Linux for DevOps | ✅ Completed | ✅ Completed |  [Week03-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_dmibypravinmishra-devops-aws-activity-7483276192813322240-gYiZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi) | [Week03-Blog](https://medium.com/@harietogochukwu/reflection-week-2-the-week-i-stopped-using-ai-and-started-engineering-ai-workflows-7bff2c3bdcee) |
-| 04 | Bash Scripting | ⬜ Not Started | ⏳ Pending | — | — |
-| 05 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
-| 06 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
-| 07 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
-| 08 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
-| 09 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
-| 10 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
-| 11 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
-| 12 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
-| 13 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
-| 14 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
+| 04 | Git & GitHub | ✅ Completed | ✅ Completed | [Week04-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_dmibypravinmishra-devops-git-activity-7485435307568443395-z2Nd?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi) | [Week04-Blog](https://medium.com/@harietogochukwu/six-git-github-lessons-that-completely-changed-how-i-think-about-software-development-122d920a2253) |
+| 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
+| 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
+| 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
+| 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
+| 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
+| 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
+| 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
+| 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
+| 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
 
 **Status:** ⬜ Not Started &nbsp;|&nbsp; 🔄 In Progress &nbsp;|&nbsp; ✅ Completed<br>
 **Assignment:** ⏳ Pending &nbsp;|&nbsp; ✅ Solved

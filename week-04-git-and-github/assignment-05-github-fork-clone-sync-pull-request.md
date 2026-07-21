@@ -152,7 +152,7 @@ Paste your LinkedIn post URL here:
 
 Paste your fork URL here:
 
-`https://github.com/pravinmishraaws/devops-micro-internship-interviews/`
+`https://github.com/Harietonyeabor/devops-micro-internship-pravinmishra`
 
 ---
 
