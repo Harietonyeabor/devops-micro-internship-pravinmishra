@@ -27,7 +27,7 @@ Confirm you are working in your own fork, then create a dedicated branch for thi
 
 #### Screenshot 1 — Output of git remote -v and git branch showing the new branch
 
-![new branch](evidence-new-branch-1.png)
+![evidence](screenshots/evidence-new-branch-1.png)
 
 ---
 
@@ -49,7 +49,7 @@ On your own fork of this repository (the one you've been submitting your DMI wor
 
 #### Screenshot 1 — Output of  `git status` showing the staged file on feature/ai-pr-ready
 
-![stage file](staged-file-1.png)
+![stage file](screenshots/staged-file-1.png)
 
 ---
 
@@ -71,13 +71,13 @@ Create a tracked, shareable pre-commit hook that blocks a commit containing secr
 
 #### Screenshot 2 — `hooks/pre-commit` open in VS Code showing the full script
 
-![hooks pre commit](hooks-pre-commit-1.png)
+![hooks pre commit](screenshots/hooks-pre-commit-1.png)
 
 ---
 
 #### Screenshot 3 — Output of `git config core.hooksPath` confirming it points to `hooks`
 
-![point to hooks](point-to-hooks-1.png)
+![point to hooks](screenshots/point-to-hooks-1.png)
 
 ---
 
@@ -105,7 +105,7 @@ Attempt to commit the staged file from Task 1 and show the hook rejecting it.
 
 #### Screenshot 4 — Terminal showing `git commit` rejected with the hook's "BLOCKED" message naming the exact file
 
-![rejected](rejected-1.png)
+![rejected](screenshots/rejected-1.png)
 
 ---
 
@@ -133,13 +133,13 @@ Create a manually invoked Claude Code skill that reads your staged changes and p
 
 #### Screenshot 5 — `SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no `Write`) and `disable-model-invocation: true`
 
-![frontmatter](skill-formatter-1.png)
+![frontmatter](screenshots/skill-formatter-1.png)
 
 ---
 
 #### Screenshot 6 — `/pr-ready` output while the risky file is still staged, showing it flagged the secret and/or debug statement
 
-![pr review](pr-review-1.png)
+![pr review](screenshots/pr-review-1.png)
 
 ---
 
@@ -167,13 +167,13 @@ Remove the secret and debug statement, then prove both gates now pass clean.
 
 #### Screenshot 7 — `git commit` succeeding after the fix (no BLOCKED message)
 
-![not blocked](git-commit-script-1.png)
+![not blocked](screenshots/git-commit-script-1.png)
 
 ---
 
 #### Screenshot 8 — Second `/pr-ready` run showing a clean risk report and a drafted PR title + description
 
-![pr second](screen9-pr-1.png)
+![pr second](screenshots/screen9-pr-1.png)
 
 ---
 
@@ -197,7 +197,7 @@ Push your branch and open a real Pull Request, using `/pr-ready`'s drafted title
 
 #### Screenshot 9 — Your Pull Request showing the base repository is your own fork, plus the title and description, with the `/pr-ready` draft visible for comparison (paste it in the PR conversation or your notes below)
 
-![base main](base-main.png)
+![base main](screenshots/base-main.png)
 
 ---
 
@@ -211,19 +211,19 @@ https://github.com/Harietonyeabor/devops-micro-internship-pravinmishra/pull/1
 
 **1. What, if anything, did you edit in the AI's drafted PR description before using it? Why?**
 
-Add your answer here.
+I reviewed the AI-generated PR description and made small edits to improve its accuracy and clarity. I ensured it correctly described the changes I made, including removing the fake hardcoded credential and debug statement, and confirmed that the information matched my actual implementation. I edited it because AI-generated content can sometimes miss important details or include information that does not fully reflect the work completed.
 
 ---
 
 **2. If you had blindly copy-pasted the AI's draft without reading it, what could go wrong?**
 
-Add your answer here.
+If I had copied the AI's draft without reviewing it, the Pull Request could have contained inaccurate or misleading information. It might have described changes that were not actually made or omitted important updates. This could confuse reviewers, slow down the review process, and reduce trust in the quality of my documentation. AI should assist the review process, but the final responsibility for accuracy belongs to the developer.
 
 ---
 
 **3. Why does this PR need to target your own fork instead of the shared upstream repository?**
 
-Add your answer here.
+This Pull Request targets my own fork because the assignment is intended for personal practice and verification of the Git workflow. The changes, such as the pre-commit hook and the /pr-ready skill, are not meant to be merged into the shared upstream repository used by all students. Using my own fork allows me to practice creating Pull Requests safely without affecting the official project or other contributors.
 
 ---
 

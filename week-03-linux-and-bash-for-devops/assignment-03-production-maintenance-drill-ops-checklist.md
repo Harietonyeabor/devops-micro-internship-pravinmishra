@@ -178,25 +178,25 @@ Assess server capacity and detect potential performance or failure risks.
 
 #### Screenshot 1 — Output of `uptime`
 
-![alt text](uptime.png)
+![alt text](screenshots/uptime.png)
 
 ---
 
 #### Screenshot 2 — Output of `free -h`
 
-![alt text](free-h.png)
+![alt text](screenshots/free-h.png)
 
 ---
 
 #### Screenshot 3 — Output of `df -h`
 
-![alt text](df-h.png)
+![alt text](screenshots/df-h.png)
 
 ---
 
 #### Screenshot 4 — Output of `sudo du -sh /var/* | sort -h`
 
-![alt text](folders-usage.png)
+![alt text](screenshots/folders-usage.png)
 
 ---
 
@@ -226,19 +226,19 @@ Ensure the correct React build is deployed and Nginx is serving it properly.
 
 #### Screenshot 1 — Output of `ls -lah /var/www/html | head -n 20`
 
-![alt text](ls-files-in-folder.png)
+![alt text](screenshots/ls-files-in-folder.png)
 
 ---
 
 #### Screenshot 2 — Output of `grep -R "Deployed by" -n /var/www/html 2>/dev/null | head`
 
-![alt text](r-deployed.png)
+![alt text](screenshots/r-deployed.png)
 
 ---
 
 #### Screenshot 3 — Output of `grep -n "try_files" /etc/nginx/sites-available/default`
 
-![alt text](try-files.png)
+![alt text](screenshots/try-files.png)
 
 ---
 
@@ -262,7 +262,7 @@ Simulate a real-world Nginx misconfiguration and recover the service safely.
 
 #### Screenshot 1 — Output of `sudo nginx -t` showing the syntax error (broken config)
 
-![Broken config](nginx-error.png)
+![Broken config](screenshots/nginx-error.png)
 
 ---
 
@@ -274,7 +274,7 @@ Simulate a real-world Nginx misconfiguration and recover the service safely.
 
 #### Screenshot 3 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-![alt text](200-ok.png)
+![alt text](screenshots/200-ok.png)
 
 ---
 
@@ -314,13 +314,13 @@ Simulate missing deployment content and recover the application safely.
 
 #### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-![output of curl ono-200 response](error-200.png)
+![output of curl ono-200 response](screenshots/error-200.png)
 
 ---
 
 #### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-![200 ok output](200-ok-back.png)
+![200 ok output](screenshots/200-ok-back.png)
 
 ---
 
@@ -411,7 +411,7 @@ https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_dmibypravinmishra-de
 
 #### Screenshot — Published LinkedIn post
 
-![Linkedin Screenshot](production-post.png)
+![Linkedin Screenshot](screenshots/production-post.png)
 
 ---
 

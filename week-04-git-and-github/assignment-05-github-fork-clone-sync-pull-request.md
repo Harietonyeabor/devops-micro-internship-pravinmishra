@@ -20,7 +20,7 @@ Fork `pravinmishraaws/devops-micro-internship-interviews` into your own GitHub a
 
 #### Screenshot 1 — Your fork page with your username and `devops-micro-internship-interviews` visible in the browser URL
 
-![fork page](create-interview-fork.png)
+![fork page](screenshots/create-interview-fork.png)
 
 ---
 
@@ -34,7 +34,7 @@ Configure one authentication method — HTTPS with a Personal Access Token, or S
 
 #### Screenshot 2 — Output of `git config --global --get credential.helper` (HTTPS) or `ssh -T git@github.com` (SSH) showing successful authentication — never show your token or private key
 
-![successfully auth](succesfully-auth.png)
+![successfully auth](screenshots/succesfully-auth.png)
 
 
 ---
@@ -49,7 +49,7 @@ Clone your fork locally, then add the original repository as `upstream`.
 
 #### Screenshot 3 — Output of `git remote -v` showing `origin` pointing to your fork and `upstream` pointing to `pravinmishraaws/devops-micro-internship-interviews`
 
-![showing fork and origin](gitremote-v.png)
+![showing fork and origin](screenshots/gitremote-v.png)
 
 ---
 
@@ -63,13 +63,13 @@ Create the branch `feature-readme-update`, add only your own entry (`Full Name �
 
 #### Screenshot 4 — Output of `git status` showing `pull_request.md` modified before staging
 
-![pull request modified](pull-req-mod.png)
+![pull request modified](screenshots/pull-req-mod.png)
 
 ---
 
 #### Screenshot 5 — Output of `git commit`
 
-![git commit](commit-std-update.png)
+![git commit](screenshots/commit-std-update.png)
 
 ---
 
@@ -83,13 +83,13 @@ Fetch and merge `upstream/main` into your local default branch, rebase your feat
 
 #### Screenshot 6 — Output of `git push -u origin feature-readme-update` showing a successful push
 
-![git push](git-push-feature-readme.png)
+![git push](screenshots/git-push-feature-readme.png)
 
 ---
 
 #### Screenshot 7 — Your fork on GitHub showing `feature-readme-update` in the branch selector or a "Compare & pull request" banner
 
-![branch](branches.png)
+![branch](screenshots/branches.png)
 
 ---
 
@@ -103,13 +103,13 @@ Open a Pull Request from `feature-readme-update` on your fork to `main` on the u
 
 #### Screenshot 8 — Pull Request creation page showing the correct base repository, base branch, head repository, compare branch, and title
 
-![pull request](pull-request-full.png)
+![pull request](screenshots/pull-request-full.png)
 
 ---
 
 #### Screenshot 9 — Successfully created Pull Request page with the PR number visible
 
-![pull req visible](pull-req-screen.png)
+![pull req visible](screenshots/pull-req-screen.png)
 
 ---
 
@@ -135,7 +135,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — LinkedIn post showing your successfully created Pull Request
 
-![Linkedin post](for-post-wk4.png)
+![Linkedin post](screenshots/for-post-wk4.png)
 
 ---
 

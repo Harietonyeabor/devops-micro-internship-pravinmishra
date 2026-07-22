@@ -103,7 +103,7 @@ Apply Nginx configuration for React routing and confirm the service is active.
 
 #### Screenshot 7 — Output of `systemctl is-active nginx` showing `active`
 
-![Active Nginx](scrrenshots/active-ngnix.png)
+![Active Nginx](screenshots/active-ngnix.png)
 
 ---
 
@@ -147,7 +147,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — LinkedIn post showing the deployed application
 
-![alt text](linkdn-deployed-post.png)
+![alt text](screenshots/linkdn-deployed-post.png)
 
 ---
 

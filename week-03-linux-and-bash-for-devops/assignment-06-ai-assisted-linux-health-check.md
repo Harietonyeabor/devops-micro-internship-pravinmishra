@@ -267,8 +267,8 @@ Turn the Bash script into a reusable, manually invoked Agentic AI workflow.
 
 #### Screenshot 12 — `/linux-triage` output for the healthy server
 
-![health server](health-report1.png)
-![health server](health-report2.png)
+![health server](screenshots/health-report1.png)
+![health server](screenshots/health-report2.png)
 
 ---
 
@@ -385,7 +385,7 @@ Recover the service as the human operator and prove that the system is healthy a
 
 #### Screenshot 18 — Output of `ls -lah reports` showing both `incident-failure-report.txt` and `recovery-report.txt`
 
-![output](report-memory.png)
+![output](screenshots/report-memory.png)
 
 ---
 

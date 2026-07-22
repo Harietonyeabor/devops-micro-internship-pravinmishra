@@ -25,7 +25,7 @@ Take a screenshot of your interaction showing:
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![alt text](IMG_20260717_090240.jpg)
+![alt text](screenshots/IMG_20260717_090240.jpg)
 
 
 Replace `task-1-chatgpt.png` with your actual screenshot file name.
@@ -99,7 +99,7 @@ EpicReads bookstore has two application versions:
 
 Save your diagram image in the `screenshots` folder and update the file name below.
 
-![Application Architecture Diagram](IMG_20260717_090353.jpg)
+![Application Architecture Diagram](screenshots/IMG_20260717_090353.jpg)
 
 Replace `task-3-diagram.png` with your actual diagram file name.
 
@@ -188,7 +188,7 @@ ls
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![VS Code Setup Screenshot](IMG_20260717_090423.jpg)
+![VS Code Setup Screenshot](screenshots/IMG_20260717_090423.jpg)
 
 
 Replace `task-5-vscode.png` with your actual screenshot file name.

@@ -20,7 +20,7 @@ Verify the Ubuntu VM and Nginx are ready for deployment.
 
 #### Screenshot 0 — Output of `sudo systemctl status nginx --no-pager` showing Active (running)
 
-![Active Nginx](active-and-running.png)
+![Active Nginx](screenshots/active-and-running.png)
 
 ---
 
@@ -34,7 +34,7 @@ Download and extract the portfolio website template.
 
 #### Screenshot 1 — Output of `ls -la` showing the extracted project folder
 
-![Extracted folder](ls-la.png)
+![Extracted folder](screenshots/ls-la.png)
 
 ---
 
@@ -48,7 +48,7 @@ Update the website footer with your deployment details.
 
 #### Screenshot 2 — Nano editor open with the updated footer showing your Full Name, Group, Week, and Date
 
-![Footer details](ownership-proof.png)
+![Footer details](screenshots/ownership-proof.png)
 
 ---
 
@@ -62,13 +62,13 @@ Deploy the portfolio website to the Nginx web root.
 
 #### Screenshot 3 — Output of `sudo nginx -t` showing configuration test successful
 
-![Test successful](successful.png)
+![Test successful](screenshots/successful.png)
 
 ---
 
 #### Screenshot 4 — Output of `ls /var/www/html` showing deployed website files
 
-![Deployed website files](view-content.png)
+![Deployed website files](screenshots/view-content.png)
 
 ---
 
@@ -82,13 +82,13 @@ Verify the deployed website is publicly accessible and the footer contains your 
 
 #### Screenshot 5 — Output of `curl ifconfig.me` showing the server's public IP address
 
-![Public ip address](ip-adr.png)
+![Public ip address](screenshots/ip-adr.png)
 
 ---
 
 #### Screenshot 6 — Browser showing the live website with your Full Name and deployment details in the footer
 
-![Live website with full details on footer](details-showing.png)
+![Live website with full details on footer](screenshots/details-showing.png)
 
 ---
 
@@ -102,13 +102,13 @@ Verify the deployed website and Nginx service are healthy.
 
 #### Screenshot 7 — Output of `systemctl is-enabled nginx`
 
-![Health check](enabled-health-check.png)
+![Health check](screenshots/enabled-health-check.png)
 
 ---
 
 #### Screenshot 8 — Output of `curl -I http://localhost` showing 200 OK
 
-![200 ok](check-200.png)
+![200 ok](screenshots/check-200.png)
 
 ---
 
@@ -126,7 +126,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — Published LinkedIn post showing the live website with your Full Name in the footer
 
-![Epic read linkedin post](epic-read-post.png)
+![Epic read linkedin post](screenshots/epic-read-post.png)
 
 ---
 

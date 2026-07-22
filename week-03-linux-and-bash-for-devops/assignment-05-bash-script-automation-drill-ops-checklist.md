@@ -20,13 +20,13 @@ Verify that Bash is available on your system and create a clean workspace for th
 
 #### Screenshot 1 — Output of `echo $SHELL` and `bash --version`
 
-![alt text](shell-bash-version.png)
+![alt text](screenshots/shell-bash-version.png)
 
 ---
 
 #### Screenshot 2 — Output of `pwd` and `ls -lah` showing the scripts directory
 
-![alt text](output-pwd-ls-lah.png)
+![alt text](screenshots/output-pwd-ls-lah.png)
 
 ---
 
@@ -63,19 +63,19 @@ Create your first Bash script, make it executable, and run it from the terminal.
 
 #### Screenshot 1 — Content of `first-script.sh`
 
-![Content of first script](content-ist-script-1.png)
+![Content of first script](screenshots/content-ist-script-1.png)
 
 ---
 
 #### Screenshot 2 — Output of `./first-script.sh`
 
-![Output of first script](output-ist-script.png)
+![Output of first script](screenshots/output-ist-script.png)
 
 ---
 
 #### Screenshot 3 — Output of `ls -l first-script.sh` showing executable permission
 
-![Executable permission output](chmod-perms.png)
+![Executable permission output](screenshots/chmod-perms.png)
 
 ---
 
@@ -114,13 +114,13 @@ Use variables to store and display user-related information.
 
 #### Screenshot 1 — Content of `user-info.sh`
 
-![User info content](usr-info-content.png)
+![User info content](screenshots/usr-info-content.png)
 
 ---
 
 #### Screenshot 2 — Output of `./user-info.sh`
 
-![Output](output-user-info.png)
+![Output](screenshots/output-user-info.png)
 
 ---
 
@@ -156,13 +156,13 @@ Use arrays and loops to print a checklist of tools used in Bash scripting.
 
 #### Screenshot 1 — Content of `tools-checklist.sh`
 
-![Tool checklist](image-1.png)
+![Tool checklist](screenshots/image-1.png)
 
 ---
 
 #### Screenshot 2 — Output of `./tools-checklist.sh`
 
-![Output](tools-output.png)
+![Output](screenshots/tools-output.png)
 
 ---
 
@@ -204,13 +204,13 @@ Use loops to repeat a task multiple times.
 
 #### Screenshot 1 — Content of `counter.sh`
 
-![Content](counter-content.png)
+![Content](screenshots/counter-content.png)
 
 ---
 
 #### Screenshot 2 — Output of `./counter.sh`
 
-![Output](output-counter.png)
+![Output](screenshots/output-counter.png)
 
 ---
 
@@ -253,19 +253,19 @@ Use file checks and conditionals to verify whether files and directories exist.
 
 #### Screenshot 1 — Output of `ls -lah ../test-folder`
 
-![Output](ls-lah-text-folder.png)
+![Output](screenshots/ls-lah-text-folder.png)
 
 ---
 
 #### Screenshot 2 — Content of `file-check.sh`
 
-![Content](content-file-check.png)
+![Content](screenshots/content-file-check.png)
 
 ---
 
 #### Screenshot 3 — Output of `./file-check.sh`
 
-![Output](file-check.png)
+![Output](screenshots/file-check.png)
 
 ---
 
@@ -307,25 +307,25 @@ Use if-else conditionals to make decisions based on a variable value.
 
 #### Screenshot 1 — Content of `score-check.sh` with `score=85`
 
-![Content](score-85.png)
+![Content](screenshots/score-85.png)
 
 ---
 
 #### Screenshot 2 — Output showing `Result: Pass`
 
-![Output](output-score.png)
+![Output](screenshots/output-score.png)
 
 ---
 
 #### Screenshot 3 — Content of `score-check.sh` with `score=55`
 
-![Output](score-55.png)
+![Output](screenshots/score-55.png)
 
 ---
 
 #### Screenshot 4 — Output showing `Result: Retry`
 
-![Output](output-score55.png)
+![Output](screenshots/output-score55.png)
 
 ---
 
@@ -367,19 +367,19 @@ Create a final Bash script using functions to organize reusable code.
 
 #### Screenshot 1 — Content of `final-automation.sh`
 
-![final automation](automation-content.png)
+![final automation](screenshots/automation-content.png)
 
 ---
 
 #### Screenshot 2 — Output of `./final-automation.sh`
 
-![Output](output-aut.png)
+![Output](screenshots/output-aut.png)
 
 ---
 
 #### Screenshot 3 — Output of `ls -lah` showing all created scripts
 
-![Output](output-allscripts.png)
+![Output](screenshots/output-allscripts.png)
 
 ---
 
@@ -425,7 +425,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — Published LinkedIn post
 
-![Linkedin screenshot](automatin-bash-post-1.png)
+![Linkedin screenshot](screenshots/automatin-bash-post-1.png)
 
 ---
 
