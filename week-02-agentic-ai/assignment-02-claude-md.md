@@ -68,19 +68,19 @@ Verify that Claude’s behavior changes after adding `CLAUDE.md` by running a ne
 
 #### Screenshot 4 — Claude's specific, detailed answer after reading CLAUDE.md (Claude mentioning S3, CloudFront and Terraform)
 
- ![Detailed Answer](<Screenshot 2026-07-07 235552.png>)
-![Detailed Answer](<Screenshot 2026-07-07 230146.png>) 
-![Detailed Answer](<Screenshot 2026-07-07 230247.png>) 
-![Detailed Answer](<Screenshot 2026-07-07 230347.png>) 
-![Detailed Answer](<Screenshot 2026-07-07 230441.png>) 
-![Detailed Answer](<Screenshot 2026-07-07 230534.png>) 
-![Detailed Answer](<Screenshot 2026-07-07 230628.png>)
+ ![Detailed Answer](screenshots/det-1.png)
+![Detailed Answer](screenshots/det-2.png)
+![Detailed Answer](screenshots/det-3.png)
+![Detailed Answer](screenshots/det-4.png)
+![Detailed Answer](screenshots/det-5.png)
+![Detailed Answer](screenshots/det-6.png)
+![Detailed Answer](screenshots/det-7.png>)
 
 ---
 
 #### Screenshot 5 — Claude refusing or warning against adding React because of the "No JavaScript" convention defined in CLAUDE.md
 
-![Refusing Javascript](<Screenshot 2026-07-08 001243.png>)
+![Refusing Javascript](screenshots/ref-jav.png)
 
 ---
 
@@ -94,7 +94,7 @@ Commit the `CLAUDE.md` file and push it to your GitHub fork so the project instr
 
 #### Screenshot 6 — `CLAUDE.md` visible in your GitHub repository after pushing the commit
 
-![github commit](<Screenshot 2026-07-08 003503.png>)
+![github commit](screenshots/vis-cla1.png)
 
 ---
 

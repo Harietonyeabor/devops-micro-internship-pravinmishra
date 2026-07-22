@@ -116,7 +116,7 @@ Prove the logging hook runs after a successful command execution and records Ter
 ![validate](screenshots/ass-6-scrn-8.png)
 
 #### Screenshot 9 — `.claude/deploy.log` showing the logged command
-![validate](ass-6-scrn-9.png)
+![validate](screenshots/ass-6-scrn-9.png)
 ---
 
 # Submission Instructions
