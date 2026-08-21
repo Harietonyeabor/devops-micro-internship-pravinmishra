@@ -86,8 +86,8 @@ Week 04 → Git & GitHub
 Week 05 → DevOps Lifecycle & Agile
 [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) 
 
-<!-- Week 06 → AWS Cloud -->
-<!-- [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) -->
+Week 06 → AWS Cloud 
+ [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/)
 
 <!-- Week 07 → Azure Cloud -->
 <!-- [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/) -->
@@ -137,7 +137,7 @@ Week 05 → DevOps Lifecycle & Agile
 | 03 | Linux for DevOps | ✅ Completed | ✅ Completed |  [Week03-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_dmibypravinmishra-devops-aws-activity-7483276192813322240-gYiZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi) | [Week03-Blog](https://medium.com/@harietogochukwu/reflection-week-2-the-week-i-stopped-using-ai-and-started-engineering-ai-workflows-7bff2c3bdcee) |
 | 04 | Git & GitHub | ✅ Completed | ✅ Completed | [Week04-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_dmibypravinmishra-devops-git-activity-7485435307568443395-z2Nd?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi) | [Week04-Blog](https://medium.com/@harietogochukwu/six-git-github-lessons-that-completely-changed-how-i-think-about-software-development-122d920a2253) |
 | 05 | DevOps Lifecycle & Agile | ✅ Completed  | ✅ Completed  | https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-devopsengineering-jira-activity-7493065418379534336-rPtt?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU | https://medium.com/@harietogochukwu/week-5-of-my-devops-journey-from-planning-and-deployment-to-ai-assisted-sprint-health-a848ad305098 |
-| 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
+| 06 | AWS Cloud | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_aws-devops-cloudengineering-activity-7496182625892741120-kwWt?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
