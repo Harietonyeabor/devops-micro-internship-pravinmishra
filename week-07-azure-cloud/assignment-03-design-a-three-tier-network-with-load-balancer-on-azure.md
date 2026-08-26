@@ -82,12 +82,12 @@ After capturing all required evidence, delete the `vnet-demo-rg` Resource Group 
 
 # Completion Checklist
 
-- [ ] Task 1: VNet and three subnets created (Screenshot 1)
-- [ ] Task 2: Web VM created and NGINX installed and verified
-- [ ] Task 3: Public Load Balancer configured (Screenshot 2)
-- [ ] Task 4: NGINX reachable through the Load Balancer public IP (Screenshot 3)
-- [ ] Task 5: Resource Group deleted after evidence was captured
-- [ ] No sensitive data exposed
+- [✅] Task 1: VNet and three subnets created (Screenshot 1)
+- [✅] Task 2: Web VM created and NGINX installed and verified
+- [✅] Task 3: Public Load Balancer configured (Screenshot 2)
+- [✅] Task 4: NGINX reachable through the Load Balancer public IP (Screenshot 3)
+- [✅] Task 5: Resource Group deleted after evidence was captured
+- [✅] No sensitive data exposed
 
 ---
 
