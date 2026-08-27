@@ -130,6 +130,16 @@ Pick one WARN or FAIL finding (or deliberately open an NSG rule to port 22 from 
 
 #### Screenshot 11 — Second `/azure-audit` run (or report) showing the finding resolved
 
+![finding resolved](claude-crn11-wk7-ass6.png)
+![finding resolved](screenshots/claude-scrn11-wk7-ass7.png)
+
+
+---
+
+### Notes
+
+Compare this assignment to the AWS audit you built in Week 6: which finding categories map to each other across the two clouds, and what stayed exactly the same about the workflow even though the `az`/`aws` commands are completely different?
+
 **Finding Category Mappings Between AWS and Azure**
 
 | AWS Finding Category (Week 6) | Azure Finding Category (Week 7) | Core Security Concern |
@@ -150,13 +160,6 @@ Pick one WARN or FAIL finding (or deliberately open an NSG rule to port 22 from 
 * **Human-in-the-Loop Governance:** Remediation commands were proposed by the AI but required manual review and execution by the human engineer to ensure production safety and change control.
 * **Closed-Loop Verification:** Both workflows concluded by re-running the deterministic audit script to generate a clean `after-fix-report.txt` proving that `FAIL: 0` was achieved.
 
----
-
-### Notes
-
-Compare this assignment to the AWS audit you built in Week 6: which finding categories map to each other across the two clouds, and what stayed exactly the same about the workflow even though the `az`/`aws` commands are completely different?
-
-Add your answer here
 
 ---
 
