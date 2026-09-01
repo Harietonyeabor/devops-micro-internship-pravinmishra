@@ -34,7 +34,7 @@ Define the AWS provider, a VPC (10.0.0.0/16) with a public subnet (10.0.1.0/24) 
 
 #### Screenshot 2 (optional) — `main.tf` showing the VPC and EC2 resource blocks
 
-Add your screenshot here.
+![resource blocks](resource-block.png)
 
 ---
 
@@ -48,7 +48,7 @@ Run `terraform init` and confirm the working directory initializes successfully.
 
 #### Screenshot 3 — Terminal showing successful `terraform init` output
 
-Add your screenshot here.
+![Tf init](screenshots/init-azure.png)
 
 ---
 
@@ -62,13 +62,13 @@ Review `terraform plan`, run `terraform apply`, and record the EC2 instance's pu
 
 #### Screenshot 4 — Terraform apply output showing successful completion
 
-Add your screenshot here.
+![Terraform apply](screenshots/plan-aws.png)
 
 ---
 
 #### Screenshot 5 — Terraform output showing the EC2 public IP
 
-Add your screenshot here.
+![EC2 Pubic IP](output-aws.png)
 
 ---
 
@@ -82,13 +82,13 @@ Confirm the EC2 instance is running in the public subnet with a public IP, insta
 
 #### Screenshot 6 — EC2 instance running in the AWS Console, with the subnet and public IP visible
 
-Add your screenshot here.
+![EC2 instance running](screenshots/EC2-aws-running.png)
 
 ---
 
 #### Screenshot 7 — Browser showing the Nginx page through the EC2 public IP, or terminal showing a successful SSH connection
 
-Add your screenshot here.
+![BROWSER showing Nginx page](screenshots/browser-aws.png)
 
 ---
 
@@ -102,7 +102,7 @@ Run `terraform destroy` to remove the Terraform-managed AWS resources after test
 
 #### Screenshot 8 — Terminal showing successful `terraform destroy` completion
 
-Add your screenshot here.
+![Terraform destroy](screenshots/aws-destroy.png)
 
 ---
 
@@ -110,7 +110,7 @@ Add your screenshot here.
 
 Write a short paragraph about any challenges you faced and how you solved them.
 
-Write your answer here.
+During this assignment, I successfully automated the deployment and teardown of an AWS EC2 instance inside a custom VPC architecture using Terraform. One initial challenge involved configuring the AWS CLI credentials where an incorrect parameter order in the configuration file caused an unknown output format error; I resolved this by explicitly targeting the CLI profile settings using aws configure set output table. Additionally, during the initial terraform apply, AWS rejected the t2.micro instance type due to regional Free Tier eligibility constraints (InvalidParameterCombination). I addressed this by updating the compute specification in main.tf to t3.micro and re-applying the configuration, allowing the EC2 instance to provision seamlessly while preserving the state of the underlying VPC, subnets, route tables, and security groups. Finally, to align with evaluation requirements for web verification, I connected via SSH using my configured RSA key pair to restore the default Nginx welcome page before executing a clean terraform destroy workflow to eliminate unnecessary cloud resource costs.
 
 ---
 

@@ -92,8 +92,8 @@ Week 06 → AWS Cloud
  Week 07 → Azure Cloud 
 [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/) 
 
-<!-- Week 08 → Terraform -->
-<!-- [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/) -->
+ Week 08 → Terraform 
+ [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/)
 
 <!-- Week 09 → Ansible -->
 <!-- [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) -->
@@ -139,7 +139,7 @@ Week 06 → AWS Cloud
 | 05 | DevOps Lifecycle & Agile | ✅ Completed  | ✅ Completed  | [Week05-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-devopsengineering-jira-activity-7493065418379534336-rPtt?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) | [Week05-Blog](https://medium.com/@harietogochukwu/week-5-of-my-devops-journey-from-planning-and-deployment-to-ai-assisted-sprint-health-a848ad305098) |
 | 06 | AWS Cloud | ✅ Completed | ✅ Completed | [Week06-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_aws-devops-cloudengineering-activity-7496182625892741120-kwWt?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) | [Week06-Blog](https://medium.com/@harietogochukwu/architecting-resilient-cloud-systems-from-a-three-tier-aws-application-to-an-ai-assisted-security-f9de1bd7cbdb) |
 | 07 | Azure Cloud | ✅ Completed | ✅ Completed |[Week07-Post] (https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-microsoftazure-cloudengineering-activity-7498386905630146565-6RBY?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) | [Week07-Blog](https://medium.com/@harietogochukwu/from-azure-infrastructure-to-ai-assisted-cloud-security-what-week-7-of-my-devops-journey-taught-me-b540dc9f27c2) |
-| 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
+| 08 | Terraform | ✅ Completed  | ✅ Completed  | [Week08-Post] (https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-aws-terraform-activity-7500200458670657536-Xfao?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) | [Week08-Blog] (https://medium.com/@harietogochukwu/why-i-let-an-ai-agent-audit-my-aws-infrastructure-and-why-i-still-refuse-to-let-it-run-terraform-732665e8b084) |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |

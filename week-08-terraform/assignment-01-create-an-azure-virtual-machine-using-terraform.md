@@ -20,13 +20,14 @@ Create a `terraform-azure-vm` project and define the resource group, virtual net
 
 #### Screenshot 1 — VS Code showing `main.tf` and the required Azure resources
 
-Add your screenshot here.
+![required azure resource](tf-maintf.png)
 
 ---
 
 #### Screenshot 2 — `main.tf` showing the public IP output and VM authentication configuration, with the password hidden or redacted
 
-Add your screenshot here.
+![vm auth config](ax-linuxmachine.png)
+![public pi output](public-ipoutput.png)
 
 ---
 
@@ -40,7 +41,7 @@ Run `terraform init` and confirm the working directory initializes successfully.
 
 #### Screenshot 3 — Terminal showing successful `terraform init` output
 
-Add your screenshot here.
+![tf init](tf-initiaiazed.png)
 
 ---
 
@@ -54,19 +55,20 @@ Review `terraform plan`, run `terraform apply`, and record the VM's public IP fr
 
 #### Screenshot 4 — Terraform plan summary showing the proposed resources
 
-Add your screenshot here.
+![tf plan](tf-plan.png)
+![tf plan](tf-plan1.png)
 
 ---
 
 #### Screenshot 5 — Terraform apply output showing successful completion
 
-Add your screenshot here.
+![tf apply](tf-apply.png)
 
 ---
 
 #### Screenshot 6 — Terraform output showing the public IP of the VM
 
-Add your screenshot here.
+![tf output](tf-output.png)
 
 ---
 
@@ -80,7 +82,7 @@ Use Azure CLI to confirm the VM was created and is running.
 
 #### Screenshot 7 — Azure CLI output showing the VM name and running status
 
-Add your screenshot here.
+![verify](verify-azurecli.png)
 
 ---
 
@@ -94,7 +96,7 @@ Run `terraform destroy` to clean up the Azure resources after testing.
 
 #### Screenshot 8 — Terminal showing successful `terraform destroy` completion
 
-Add your screenshot here.
+![tf destory azure](destroyazure-tf.png)
 
 ---
 
@@ -102,7 +104,7 @@ Add your screenshot here.
 
 Write a short paragraph explaining what you learned or any issues you encountered.
 
-Write your answer here.
+During this lab, I gained practical experience using Terraform to automate and manage the end-to-end lifecycle of cloud infrastructure on Microsoft Azure, from provisioning virtual networks and compute instances to executing clean teardowns. The primary challenges encountered involved regional capacity restrictions (`SkuNotAvailable`) and subscription-level region eligibility constraints across standard locations like East US and West Europe, as well as temporary WSL DNS resolution failures following a system reboot. I resolved these issues by configuring persistent DNS resolvers in `/etc/resolv.conf`, analyzing subscription-supported regions, and migrating the deployment target to `polandcentral` with an available `Standard_B2as_v2` VM size. This reinforced the critical importance of understanding regional cloud availability, managing Infrastructure as Code (IaC) state consistency, and verifying dependency lifecycles during automated deployments.
 
 ---
 

@@ -20,19 +20,21 @@ Create a custom VPC/VNet (10.0.0.0/16) with six subnets across two Availability 
 
 #### Screenshot 1 — VPC or VNet details showing 10.0.0.0/16
 
-Add your screenshot here.
+![vpc](screenshots/bkr-vpc.png)
+![vpc](screenshots/vnet-vpc.png)
 
 ---
 
 #### Screenshot 2 — Subnet list showing all six subnets, their tiers, CIDR ranges, and Availability Zones
 
-Add your screenshot here.
+![6 subnets](screenshots/subnets-bkrv.png)
+![subnets](screenshots/subnets-aws.png)
 
 ---
 
 #### Screenshot 3 — Terraform plan or cloud networking view showing the required routing and tier isolation
 
-Add your screenshot here.
+![Tf](screenshots/tfp-bookrv.png)
 
 ---
 
@@ -46,25 +48,27 @@ Configure tier-specific Security Groups/NSGs (Web Tier HTTP 80, App Tier 3001 on
 
 #### Screenshot 4 — Web, App, and Database Security Group or NSG rules
 
-Add your screenshot here.
+![web, app](screenshots/resources-bkr.png)
+![db etc](screenshots/resources-bkr1.png)
 
 ---
 
 #### Screenshot 5 — Public frontend load balancer configuration
 
-Add your screenshot here.
+![load bal frontend](screenshots/load-bal-br.png)
 
 ---
 
 #### Screenshot 6 — Internal backend load balancer configuration
 
-Add your screenshot here.
+![internal](screenshots/load-bal-br-1.png)
 
 ---
 
 #### Screenshot 7 — Healthy frontend and backend targets or backend pools
 
-Add your screenshot here.
+![book review app healthy](screenshots/bkr-app-h.png)
+![book review web healthy](screenshots/bkrv-web.png)
 
 ---
 
@@ -78,19 +82,20 @@ Deploy the Next.js Web Tier behind Nginx on port 80 in the public subnets, and t
 
 #### Screenshot 8 — EC2 or Azure VM dashboard showing the frontend and backend VMs
 
-Add your screenshot here.
+![book review web server](screenshots/bkrv-wbserver.png)
+![bk review app server](screenshots/bkr-appserver.png)
 
 ---
 
 #### Screenshot 9 — Nginx status or frontend response on the Web Tier
 
-Add your screenshot here.
+![Status running](screenshots/nginxstatus-web.png)
 
 ---
 
 #### Screenshot 10 — Backend API response through the permitted internal path
 
-Add your screenshot here.
+![backend api](screenshots/backend-bkr.png)
 
 ---
 
@@ -104,31 +109,31 @@ Deploy a private managed MySQL database (Amazon RDS Multi-AZ or Azure Database f
 
 #### Screenshot 11 — Amazon RDS or Azure Database dashboard showing the primary database and read replica
 
-Add your screenshot here.
+![database](screenshots/db-bkrv.png)
 
 ---
 
 #### Screenshot 12 — Evidence of private database networking and permitted App Tier access
 
-Add your screenshot here.
+![evidence](screenshots/prdb-br.png)
 
 ---
 
 #### Screenshot 13 — Functional Book Review App homepage and login flow
 
-Add your screenshot here.
+![browser](screenshots/funtional-b-login-flow.png)
 
 ---
 
 #### Screenshot 14 — Functional review flow with working backend API and database integration
 
-Add your screenshot here.
+![functional review](screenshots/srn14-wk8-ass5.png)
 
 ---
 
 #### Screenshot 15 (optional) — Application logs or terminal output
 
-Add your screenshot here.
+![logs output](screenshots/scrn-15.png)
 
 ---
 
@@ -136,7 +141,57 @@ Add your screenshot here.
 
 Report the cloud platform used (AWS or Azure), your Terraform code structure (`main.tf`, `variables.tf`, `outputs.tf`, and supporting files), a link/description of your architecture diagram, and the Public Load Balancer DNS used to access the frontend.
 
-Write your answer here.
+**Cloud Platform Used**
+
+* **Provider:** Amazon Web Services (AWS)
+* **Target Region:** `us-east-1` (US East - N. Virginia)
+
+---
+
+**Terraform Code Structure**
+The infrastructure is provisioned modularly using Terraform to manage the 3-tier architecture:
+
+```text
+terraform/
+├── main.tf                 # Core orchestration: VPC, subnets, IGW, NAT GW, route tables, and instances
+├── variables.tf            # Input parameters (VPC CIDR, instance types, DB credentials, key pair names)
+├── outputs.tf              # Exported values (Public ALB DNS, Internal ALB DNS, RDS endpoints, instance IPs)
+├── security_groups.tf      # Granular security groups for Public ALB, Web Tier, Internal ALB, App Tier, and RDS
+├── alb.tf                  # Public Application Load Balancer and Internal Application Load Balancer configurations
+├── rds.tf                  # Multi-AZ RDS MySQL instance, DB subnet group, and parameter groups
+├── user_data_web.sh        # Startup script for Web Server (Node.js runtime, Nginx reverse proxy, PM2)
+└── user_data_app.sh        # Startup script for App Server (Node.js runtime, PM2 backend configuration)
+
+```
+
+---
+
+**Architecture Diagram Description**
+The architecture implements a secure, highly available **3-Tier VPC Architecture**:
+
+1. **Public Subnets (Web / Presentation Tier):**
+* Hosts an internet-facing **Public Application Load Balancer (ALB)** distributing traffic to **Nginx Web/Frontend EC2 instances**.
+* Nginx serves the Next.js frontend on port `3000` and reverse-proxies API requests (`/api/*`) internally.
+* Outbound internet access is provided via an **Internet Gateway (IGW)** and a **NAT Gateway**.
+
+
+2. **Private Application Subnets (Logic Tier):**
+* Completely isolated from direct internet access.
+* Houses an **Internal Application Load Balancer** and **Node.js/Express App EC2 instances** managed by PM2 on port `3001`.
+* Security groups enforce that the App Tier only accepts traffic forwarded from the Web Tier / Internal ALB.
+
+
+3. **Private Database Subnets (Data Tier):**
+* Hosts an **Amazon RDS MySQL** database cluster deployed across multiple availability zones for automated failover.
+* Strictly gated by ingress rules allowing port `3306` access only from the App Tier security group.
+
+
+
+---
+
+**Public Load Balancer DNS (Frontend Entry Point)**
+
+* **Public ALB URL:** `[http://book-review-public-alb-1737082241.us-east-1.elb.amazonaws.com](http://book-review-public-alb-1737082241.us-east-1.elb.amazonaws.com)`
 
 ---
 
@@ -152,13 +207,13 @@ Publish a LinkedIn post about what you achieved in this assignment, with public 
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/enGSVNxy`
 
 ---
 
 #### Screenshot 16 — Published LinkedIn post showing the text and at least one image or proof
 
-Add your screenshot here.
+![published linkedin](pst-wk8-as5.png)
 
 ---
 

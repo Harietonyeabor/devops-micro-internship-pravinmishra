@@ -103,7 +103,7 @@ Apply Nginx configuration for React routing and confirm the service is active.
 
 #### Screenshot 7 — Output of `systemctl is-active nginx` showing `active`
 
-![Active Nginx](screenshots/active-ngnix.png)
+![Active Nginx](scre enshots/active-ngnix.png)
 
 ---
 

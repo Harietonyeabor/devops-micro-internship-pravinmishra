@@ -34,7 +34,7 @@ Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ## What I Learned (2–3 lines)
 
-I learned that protocols is a set of rules that devices follow to communicate with each other.
+I learned that protocols are agreed  set of rules that devices follow to communicate with each other.
 
 ---
 
@@ -302,7 +302,7 @@ hashtag#CloudComputing hashtag#VSCode hashtag#Projectmanagement
 
 ### What did you find easy?
 
-I found the topic easy protocol in networking easy using real life examples.
+I found the topic protocol in networking easy using real life examples.
 
 ---
 

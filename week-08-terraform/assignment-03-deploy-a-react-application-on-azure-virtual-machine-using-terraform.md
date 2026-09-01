@@ -20,7 +20,7 @@ Create a `terraform-react-azure` project directory for the Azure Terraform confi
 
 #### Screenshot 1 — File Explorer, VS Code, or terminal showing the `terraform-react-azure` project directory
 
-Add your screenshot here.
+![tf react azure project directory](screenshots/tf-azure-react.png)
 
 ---
 
@@ -34,7 +34,7 @@ Define the resource group, virtual network/subnet, Network Security Group (SSH 2
 
 #### Screenshot 2 — VS Code showing `main.tf` with the required Azure resources, with any password or sensitive values hidden
 
-Add your screenshot here.
+![azure required resources](screenshots/az-res-main.tf.png)
 
 ---
 
@@ -48,7 +48,7 @@ Run `terraform init` and confirm the working directory initializes successfully.
 
 #### Screenshot 3 — Terminal showing successful `terraform init` output
 
-Add your screenshot here.
+![terraform init](screenshots/init-react.png)
 
 ---
 
@@ -62,13 +62,13 @@ Review `terraform plan`, run `terraform apply`, and record the VM's public IP.
 
 #### Screenshot 4 — Terraform apply output showing successful completion
 
-Add your screenshot here.
+![apply output](screenshots/apply-react.png)
 
 ---
 
 #### Screenshot 5 — Azure portal showing the Virtual Machine running and its public IP
 
-Add your screenshot here.
+![public ip](screenshots/ip-react.png)
 
 ---
 
@@ -96,7 +96,7 @@ Update Ubuntu and install Node.js, npm, and Git.
 
 #### Screenshot 7 — Terminal showing successful installation and the `node -v` and `npm -v` output
 
-Add your screenshot here.
+![output](screenshots/versions-az-react.png)
 
 ---
 
@@ -110,13 +110,13 @@ Follow the `my-react-app` repository README to clone, install, and build the app
 
 #### Screenshot 8 — Terminal showing the successful React build
 
-Add your screenshot here.
+![succesful](screenshots/sucessful-reactbuild.png)
 
 ---
 
 #### Screenshot 9 — Terminal showing that Nginx is active and running
 
-Add your screenshot here.
+![termial active and running](screenshots/act-running.png)
 
 ---
 
@@ -130,7 +130,7 @@ Confirm the React application loads through the VM's public IP and navigation wo
 
 #### Screenshot 10 — Browser showing the React application with the Azure VM public IP visible in the address bar
 
-Add your screenshot here.
+![browser](screenshots/deployed-rctapp.png)
 
 ---
 
@@ -138,7 +138,30 @@ Add your screenshot here.
 
 Write a short summary of what you built and any issues you encountered and how you resolved them.
 
-Write your answer here.
+**Project Summary**
+
+* **Infrastructure Provisioning**: Automated the deployment of a full cloud hosting environment on Microsoft Azure using Terraform, creating an Azure Resource Group, Virtual Network (VNet), Subnet, Network Security Group (NSG) configured for inbound SSH (port 22) and HTTP (port 80) traffic, a Static Public IP, a Network Interface (NIC), and an Ubuntu 22.04 LTS Virtual Machine (`Standard_B2as_v2`).
+* **Application Setup & Deployment**: Connected to the VM via SSH, configured the runtime environment with modern Node.js, npm, and Nginx, cloned and personalized the React web application with my details, built the optimized production bundle (`npm run build`), and deployed the static assets to `/var/www/html`.
+* **Web Server & Routing Configuration**: Configured Nginx with SPA routing fallback (`try_files $uri /index.html;`) to properly handle client-side routing, verified configuration syntax, and successfully served the live application publicly over HTTP.
+
+---
+
+**Issues Encountered & Resolutions**
+
+* **Browser Redirect & DNS Hijack**: Browser queries were hijacked by a rogue extension redirecting requests to dead endpoints (`search-sync.com`, `searchtwix.com`), resulting in `DNS_PROBE_FINISHED_BAD_CONFIG`.
+* *Resolution*: Removed the problematic extension (`Awesome Screen Recorder`), cleared hijacked search engines, disabled automatic extension re-syncing, flushed the local DNS cache, and configured explicit public DNS resolvers (`8.8.8.8` / `1.1.1.1`).
+
+
+* **Azure VM Regional SKU Quota Constraints**: Initial deployment in `eastus` failed with `SkuNotAvailable (409 Conflict)` due to capacity restrictions on the `Standard_B1s` size.
+* *Resolution*: Updated Terraform configurations to target an available region (`polandcentral`) with an active SKU (`Standard_B2as_v2`).
+
+
+* **Terraform Subnet State Discrepancy**: A provider-level state mismatch occurred when the subnet provisioned before being tracked in the local state file, triggering an "already exists" error on subsequent runs.
+* *Resolution*: Imported the remote subnet resource ID into the Terraform state file using `MSYS_NO_PATHCONV=1 terraform import` in Git Bash to bypass POSIX path translation, allowing the remaining resources to apply cleanly.
+
+
+* **Non-Interactive Package Upgrades on Ubuntu**: The Ubuntu `needrestart` interactive dialog froze terminal automation during package upgrades.
+* *Resolution*: Used non-interactive flags (`DEBIAN_FRONTEND=noninteractive NEEDRESTART_MODE=a`) to install and upgrade packages silently.
 
 ---
 
