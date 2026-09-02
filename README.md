@@ -43,7 +43,7 @@ This is not a course. It is an internship-style program — real deployments, re
 <!-- If you were named Champion of the Week, add the badge below and link to your LinkedIn post -->
 
 | Week | Award | Post |
-|------|-------|------|
+|Week 07|🏆 Champion of the Week|https://lnkd.in/p/e7qytdGw|
 | <!-- e.g. Week 03 --> | <!-- 🏆 Champion of the Week --> | <!-- [LinkedIn Post](#) --> |
 
 ### Leaderboard

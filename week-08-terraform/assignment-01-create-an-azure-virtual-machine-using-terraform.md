@@ -118,13 +118,13 @@ During this lab, I gained practical experience using Terraform to automate and m
 
 # Completion Checklist
 
-- [ ] Task 1: `terraform-azure-vm` project created with all required resources defined (Screenshots 1–2)
-- [ ] Task 2: `terraform init` completed successfully (Screenshot 3)
-- [ ] Task 3: Plan reviewed and `terraform apply` completed, public IP recorded (Screenshots 4–6)
-- [ ] Task 4: VM verified as running via Azure CLI (Screenshot 7)
-- [ ] Task 5: `terraform destroy` completed successfully (Screenshot 8)
-- [ ] Learning/issues paragraph written (Notes)
-- [ ] No sensitive information exposed
+- [✅] Task 1: `terraform-azure-vm` project created with all required resources defined (Screenshots 1–2)
+- [✅] Task 2: `terraform init` completed successfully (Screenshot 3)
+- [✅] Task 3: Plan reviewed and `terraform apply` completed, public IP recorded (Screenshots 4–6)
+- [✅] Task 4: VM verified as running via Azure CLI (Screenshot 7)
+- [✅] Task 5: `terraform destroy` completed successfully (Screenshot 8)
+- [✅] Learning/issues paragraph written (Notes)
+- [✅] No sensitive information exposed
 
 ---
 

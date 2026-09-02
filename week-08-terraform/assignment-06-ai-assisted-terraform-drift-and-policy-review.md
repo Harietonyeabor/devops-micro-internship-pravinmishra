@@ -111,7 +111,7 @@ Deliberately introduce a change Terraform did not make — a destructive change 
 
 #### Screenshot 9 — The drift you introduced, visible in your Terraform config or the cloud console
 
-Add your screenshot here.
+![drift introduced](screenshots/drift.png)
 
 ---
 
@@ -181,15 +181,15 @@ Your submission must include:
 
 # Completion Checklist
 
-- [ ] Task 1: Clean `terraform plan` baseline confirmed and workspace folders created (Screenshots 1–2)
-- [ ] Task 2: `CLAUDE.md` created with project context and safety rules (Screenshot 3)
-- [ ] Task 3: Drift check script built, passes syntax check, and is executable (Screenshots 4–5)
-- [ ] Task 4: Script run against the clean baseline shows a healthy result (Screenshot 6)
-- [ ] Task 5: `/tf-drift-review` skill created and run against the healthy baseline (Screenshots 7–8)
-- [ ] Task 6: Drift simulated and correctly flagged by the skill (Screenshots 9–10)
-- [ ] Task 7: `PreToolUse` hook created and shown blocking `apply` on a failing report (Screenshots 11–12)
-- [ ] Task 8: Drift resolved with a human-reviewed `apply`, second review shows healthy (Screenshots 13–14)
-- [ ] Notes question answered
+- [✅] Task 1: Clean `terraform plan` baseline confirmed and workspace folders created (Screenshots 1–2)
+- [✅] Task 2: `CLAUDE.md` created with project context and safety rules (Screenshot 3)
+- [✅] Task 3: Drift check script built, passes syntax check, and is executable (Screenshots 4–5)
+- [✅] Task 4: Script run against the clean baseline shows a healthy result (Screenshot 6)
+- [✅] Task 5: `/tf-drift-review` skill created and run against the healthy baseline (Screenshots 7–8)
+- [✅] Task 6: Drift simulated and correctly flagged by the skill (Screenshots 9–10)
+- [✅] Task 7: `PreToolUse` hook created and shown blocking `apply` on a failing report (Screenshots 11–12)
+- [✅] Task 8: Drift resolved with a human-reviewed `apply`, second review shows healthy (Screenshots 13–14)
+- [✅] Notes question answered
 
 ---
 

@@ -82,7 +82,7 @@ Establish an SSH session with the Ubuntu VM through its public IP.
 
 #### Screenshot 6 — Terminal showing a successful SSH connection to the Azure VM
 
-Add your screenshot here.
+![ssh connection](screenshots/ssh-aws-success-1.png)
 
 ---
 
@@ -175,16 +175,16 @@ Write a short summary of what you built and any issues you encountered and how y
 
 # Completion Checklist
 
-- [ ] Task 1: `terraform-react-azure` project created (Screenshot 1)
-- [ ] Task 2: `main.tf` defines all required Azure resources (Screenshot 2)
-- [ ] Task 3: `terraform init` completed successfully (Screenshot 3)
-- [ ] Task 4: Plan applied and VM running with public IP (Screenshots 4–5)
-- [ ] Task 5: SSH connection verified (Screenshot 6)
-- [ ] Task 6: Node.js, npm, and Git installed (Screenshot 7)
-- [ ] Task 7: React app built and served through Nginx (Screenshots 8–9)
-- [ ] Task 8: App verified through the VM public IP (Screenshot 10)
-- [ ] Summary paragraph written (Notes)
-- [ ] No sensitive information exposed
+- [✅] Task 1: `terraform-react-azure` project created (Screenshot 1)
+- [✅] Task 2: `main.tf` defines all required Azure resources (Screenshot 2)
+- [✅] Task 3: `terraform init` completed successfully (Screenshot 3)
+- [✅] Task 4: Plan applied and VM running with public IP (Screenshots 4–5)
+- [✅] Task 5: SSH connection verified (Screenshot 6)
+- [✅] Task 6: Node.js, npm, and Git installed (Screenshot 7)
+- [✅] Task 7: React app built and served through Nginx (Screenshots 8–9)
+- [✅] Task 8: App verified through the VM public IP (Screenshot 10)
+- [✅] Summary paragraph written (Notes)
+- [✅] No sensitive information exposed
 
 ---
 

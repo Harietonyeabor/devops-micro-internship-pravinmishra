@@ -20,7 +20,7 @@ Create a `terraform-aws-vm` project directory for the AWS Terraform configuratio
 
 #### Screenshot 1 — File Explorer, VS Code, or terminal showing the `terraform-aws-vm` project directory
 
-Add your screenshot here.
+![tfs-aws-vm](screenshots/tf-aws-vm-pd.png)
 
 ---
 
@@ -124,14 +124,14 @@ During this assignment, I successfully automated the deployment and teardown of 
 
 # Completion Checklist
 
-- [ ] Task 1: `terraform-aws-vm` project created (Screenshot 1)
-- [ ] Task 2: `main.tf` defines VPC, subnets, IGW, Security Group, and EC2 (Screenshot 2, optional)
-- [ ] Task 3: `terraform init` completed successfully (Screenshot 3)
-- [ ] Task 4: Plan reviewed and `terraform apply` completed, public IP recorded (Screenshots 4–5)
-- [ ] Task 5: EC2 instance verified running and accessible (Screenshots 6–7)
-- [ ] Task 6: `terraform destroy` completed successfully (Screenshot 8)
-- [ ] Challenges/solutions paragraph written (Notes)
-- [ ] No sensitive information exposed
+- [✅] Task 1: `terraform-aws-vm` project created (Screenshot 1)
+- [✅] Task 2: `main.tf` defines VPC, subnets, IGW, Security Group, and EC2 (Screenshot 2, optional)
+- [✅] Task 3: `terraform init` completed successfully (Screenshot 3)
+- [✅] Task 4: Plan reviewed and `terraform apply` completed, public IP recorded (Screenshots 4–5)
+- [✅] Task 5: EC2 instance verified running and accessible (Screenshots 6–7)
+- [✅] Task 6: `terraform destroy` completed successfully (Screenshot 8)
+- [✅] Challenges/solutions paragraph written (Notes)
+- [✅] No sensitive information exposed
 
 ---
 

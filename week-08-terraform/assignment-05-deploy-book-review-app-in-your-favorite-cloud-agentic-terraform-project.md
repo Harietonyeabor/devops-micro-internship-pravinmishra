@@ -227,13 +227,13 @@ Paste your LinkedIn post URL here:
 
 # Completion Checklist
 
-- [ ] Task 1: Six-subnet VPC/VNet created across two AZs with Terraform (Screenshots 1–3)
-- [ ] Task 2: Tier-specific security rules and load balancers configured (Screenshots 4–7)
-- [ ] Task 3: Web and App Tier VMs deployed with correct public/private placement (Screenshots 8–10)
-- [ ] Task 4: Private MySQL with read replica deployed and app validated end to end (Screenshots 11–15)
-- [ ] Report completed: cloud platform, Terraform structure, diagram, LB DNS (Notes)
-- [ ] LinkedIn post published and URL submitted (Screenshot 16)
-- [ ] No sensitive data exposed
+- [✅] Task 1: Six-subnet VPC/VNet created across two AZs with Terraform (Screenshots 1–3)
+- [✅] Task 2: Tier-specific security rules and load balancers configured (Screenshots 4–7)
+- [✅] Task 3: Web and App Tier VMs deployed with correct public/private placement (Screenshots 8–10)
+- [✅] Task 4: Private MySQL with read replica deployed and app validated end to end (Screenshots 11–15)
+- [✅] Report completed: cloud platform, Terraform structure, diagram, LB DNS (Notes)
+- [✅] LinkedIn post published and URL submitted (Screenshot 16)
+- [✅] No sensitive data exposed
 
 ---
 

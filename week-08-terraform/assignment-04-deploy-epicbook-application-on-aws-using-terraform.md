@@ -185,14 +185,14 @@ Paste your LinkedIn post URL here:
 
 # Completion Checklist
 
-- [ ] Task 1: VPC, subnets, IGW, and Security Groups created with Terraform (Screenshots 1–2)
-- [ ] Task 2: EC2 provisioned and required software installed (Screenshots 3–5)
-- [ ] Task 3: EpicBook deployed and Nginx serving the app (Screenshots 6–7)
-- [ ] Task 4: Private RDS MySQL created and database initialized (Screenshots 8–10)
-- [ ] Task 5: End-to-end functionality validated (Screenshots 11–12)
-- [ ] Issue/fix/learning note written (Notes)
-- [ ] LinkedIn post published and URL submitted (Screenshot 13)
-- [ ] No sensitive data exposed
+- [✅] Task 1: VPC, subnets, IGW, and Security Groups created with Terraform (Screenshots 1–2)
+- [✅] Task 2: EC2 provisioned and required software installed (Screenshots 3–5)
+- [✅] Task 3: EpicBook deployed and Nginx serving the app (Screenshots 6–7)
+- [✅] Task 4: Private RDS MySQL created and database initialized (Screenshots 8–10)
+- [✅] Task 5: End-to-end functionality validated (Screenshots 11–12)
+- [✅] Issue/fix/learning note written (Notes)
+- [✅] LinkedIn post published and URL submitted (Screenshot 13)
+- [✅] No sensitive data exposed
 
 ---
 
