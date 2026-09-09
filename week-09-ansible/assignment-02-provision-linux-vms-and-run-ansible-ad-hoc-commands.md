@@ -24,19 +24,20 @@ This project will use the Git repository and Ansible controller prepared in Assi
 
 #### Screenshot 1 — Terminal showing the complete `ansible-adhoc-lab` project structure
 
-Add your screenshot here.
+![output](screenshots/ansible-adhoc.png)
+
 
 ---
 
 #### Screenshot 2 — Terminal showing `git status --short` with the new project files and updated `.gitignore`
 
-Add your screenshot here.
+![git status](screenshots/git-status-ans.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+Created the isolated `ansible-adhoc-lab` project directory inside the existing controller repository, cleanly separating infrastructure code (`terraform/`) from automation files (`ansible/`). Updated the root `.gitignore` with rules for `.terraform/`, `*.tfstate`, and `*.tfplan` to guarantee that local state files and sCreated an isolated ansible-adhoc-lab workspace within the existing ansible-onboarding repository, cleanly decoupling cloud infrastructure provisioning (terraform/) from configuration orchestration (ansible/). Updated the root .gitignore with rules for .terraform/, *.tfstate, and *.tfplan files to ensure that provider binaries, local state, and plan caches containing sensitive infrastructure details remain strictly excluded from version control.ensitive provider data are never tracked in Git.
 
 ---
 
@@ -57,26 +58,25 @@ Do not configure both providers for this assignment.
 
 #### Screenshot 3 — Terraform configuration showing the three or four server roles and the `for_each` or `count` implementation
 
-Add your screenshot here.
+![tf config](screenshots/main-tf-ans.png)
 
 ---
 
 #### Screenshot 4 — Terraform configuration showing SSH restricted to the controller IP and HTTP allowed only for web hosts
 
-Add your screenshot here.
+![ssh and http](screenshots/http-ssh.png)
 
 ---
 
 #### Screenshot 5 — Terraform output configuration showing how public IP addresses are associated with the server roles
 
-Add your screenshot here.
+![output](screenshots/output-tf.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
-
+Defined the infrastructure modular Terraform configuration for a three-VM fleet (web1, app1, db1) on AWS. Leveraged the for_each meta-argument across a role map to provision identical Ubuntu 22.04 LTS instances cleanly without repeating resource blocks, attaching the ED25519 public SSH key from Assignment 01. Hardened network security by restricting inbound SSH (port 22) strictly to the controller's /32 public IP CIDR, while configuring HTTP (port 80) access for the public-facing web tier.
 ---
 
 # Task 3 — Provision the Infrastructure with Terraform
@@ -89,26 +89,25 @@ Initialize and validate the Terraform configuration, review the execution plan, 
 
 #### Screenshot 6 — Final `terraform apply` output showing `Apply complete`
 
-Add your screenshot here.
+![final tf apply](screenshots/tf-apply-ans.png)
 
 ---
 
 #### Screenshot 7 — `terraform output public_ips` showing the role-to-IP mapping for all three or four VMs
 
-Add your screenshot here.
+![tf public ip's](screenshots/ips-ans.png)
 
 ---
 
 #### Screenshot 8 — Azure Portal or AWS Management Console showing all three or four VMs in the `Running` state, with their role-based names visible
 
-Add your screenshot here.
+![running instances](screenshots/running-ans-inst.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
-
+Initialized the AWS provider, confirmed syntax integrity via terraform validate, and executed terraform apply to provision all 10 network and compute resources. Diagnosed and resolved a regional VpcLimitExceeded error by cleaning up stale VPCs in us-east-1, successfully spinning up the custom VPC, public subnet, internet gateway, route table, security group, and three active EC2 instances while exporting structured public and private IP map outputs for inventory consumption.
 ---
 
 # Task 4 — Verify SSH Key-Based Access
@@ -121,13 +120,13 @@ Verify that each managed VM can be accessed from the Ansible controller using SS
 
 #### Screenshot 9 — Terminal showing successful SSH hostname output from all VMs
 
-Add your screenshot here.
+![ssh output](screenshots/succesful-ssh.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+Verified end-to-end passwordless SSH authentication across the entire three-node fleet using the active ED25519 key loaded into ssh-agent. Connected directly to the internet-facing web1 instance via its public IP, and successfully reached private backend nodes app1 (10.0.1.123) and db1 (10.0.1.72) through web1 using SSH ProxyJump (-J) with agent forwarding (-A), confirming that internal VPC routing and firewall rules operate correctly without exposing backend nodes publicly
 
 ---
 
@@ -143,19 +142,19 @@ The inventory allows Ansible to run commands against all servers, or only specif
 
 #### Screenshot 10 — `inventory.ini` showing the `web`, `app`, and `db` groups
 
-Add your screenshot here.
+![inventory.ini](screenshots/inv-ini.png)
 
 ---
 
 #### Screenshot 11 — Output of `ansible-inventory -i inventory.ini --graph`
 
-Add your screenshot here.
+![graph](screenshots/graph-ans.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+Constructed a custom INI inventory file dividing the infrastructure into functional tiers (web, app, and db). Assigned the public IP to web1 for direct ingress and mapped internal VPC IPs to app1 and db1. Implemented ansible_ssh_common_args with ProxyJump and agent forwarding under group variables so Ansible seamlessly routes commands to private nodes via the public bastion host without storing SSH keys on remote instances.
 
 ---
 
@@ -171,43 +170,43 @@ This task proves that the inventory is working and that Ansible can control mult
 
 #### Screenshot 12 — Output of `ansible all -i inventory.ini -m ping`
 
-Add your screenshot here.
+![ansible all](screenshots/success-ans.png)
 
 ---
 
 #### Screenshot 13 — Output of `ansible all -i inventory.ini -m command -a "uptime"`
 
-Add your screenshot here.
+![uptime](screenshots/uptime-output.png)
 
 ---
 
 #### Screenshot 14 — Output of `ansible web -i inventory.ini -m apt -a "name=nginx state=present update_cache=yes" --become`
 
-Add your screenshot here.
+![output of ansible web](screenshots/output-ans-web.png)
 
 ---
 
 #### Screenshot 15 — Output of `ansible web -i inventory.ini -m service -a "name=nginx state=started enabled=yes" --become`
 
-Add your screenshot here.
+![nginx started](screenshots/nginx-started.png)
 
 ---
 
 #### Screenshot 16 — Output of `ansible all -i inventory.ini -m apt -a "name=htop state=present update_cache=yes" --become`
 
-Add your screenshot here.
+![ansible inventory](screenshots/ans-inv.png)
 
 ---
 
 #### Screenshot 17 — Output of `ansible web -i inventory.ini -m command -a "systemctl is-active nginx"`
 
-Add your screenshot here.
+![active](screenshots/active-ans.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+Executed Ansible ad-hoc commands across target inventory tiers to validate connectivity, retrieve telemetry, and orchestrate package lifecycles without playbooks. Leveraged the ping module to verify controller-to-host execution environments, gathered fleet health via the command module, and applied privilege escalation (--become) with the apt and service modules to install, start, and verify Nginx exclusively on the web tier while deploying administrative monitoring tooling (htop) fleet-wide.
 
 ---
 
@@ -219,13 +218,13 @@ Add your task notes here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/eZvbGmYd`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![linkedin post](screenshots/linkedist-wk9-2.png)
 
 ---
 
@@ -235,37 +234,37 @@ Answer the following in your own words:
 
 **1. What is the purpose of an Ansible inventory file?**
 
-Add your answer here.
+An Ansible inventory file defines and organizes the target managed infrastructure that Ansible automates. It maps human-readable host aliases to network identifiers (IP addresses or DNS hostnames), groups hosts into logical tiers based on operational roles (e.g., web, app, db), and stores connection metadata—such as SSH users, private key locations, and proxy jump instructions—so commands can be targeted accurately across the fleet.
 
 ---
 
 **2. What is the difference between the `web`, `app`, and `db` groups in your inventory?**
 
-Add your answer here.
+The groups separate servers by their architectural role and network accessibility. The web group contains internet-facing nodes configured with public IPs and open HTTP ingress to serve end-user traffic. The app and db groups represent internal backend tiers assigned only private subnet IPs; they are shielded from direct internet access and require SSH bastion routing (ProxyJump) through the web instance for administrative operations.
 
 ---
 
 **3. What does the Ansible `ping` module verify?**
 
-Add your answer here.
+The Ansible ping module is not an ICMP network ping. It validates end-to-end management readiness by establishing an authenticated SSH connection to the remote host, verifying the presence of a supported Python runtime environment, executing a lightweight test module, and confirming a return payload of "ping": "pong".
 
 ---
 
 **4. Why do package installation commands require `--become`?**
 
-Add your answer here.
+Package managers such as apt interact with protected operating system directories (/var/lib/dpkg/, /etc/, /usr/bin/) and require root privileges to install software and update repository metadata. The --become flag activates privilege escalation (standard sudo), allowing the default non-root SSH user (ubuntu) to run administrative package tasks.
 
 ---
 
 **5. When would you use an ad-hoc command instead of a playbook?**
 
-Add your answer here.
+Ad-hoc commands are best suited for rapid, one-off operational tasks, quick troubleshooting, or instant fleet-wide queries—such as verifying service status, checking disk/memory usage, running reboots, or executing quick connectivity checks. Structured Ansible playbooks are preferred when orchestrating multi-step, repeatable, version-controlled deployments and long-term configuration management.
 
 ---
 
 **6. What is one challenge you faced while setting up SSH or inventory, and how did you fix it?**
 
-Add your answer here.
+During initial SSH verification, connections to the public instance timed out due to a dynamic change in the local workstation's public IP, which caused packets to be dropped by the security group. This was resolved by re-querying the controller's current IP address, updating terraform.tfvars, and running terraform apply -auto-approve to update the inbound port 22 firewall rule without disrupting the running virtual machines.
 
 ---
 
