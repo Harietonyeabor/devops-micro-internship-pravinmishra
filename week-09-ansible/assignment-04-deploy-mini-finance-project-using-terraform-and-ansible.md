@@ -256,7 +256,8 @@ Copy and paste the complete contents of your `ansible/site.yml` file below:
         fail_msg: "Website returned status {{ webpage.status }} instead of 200"
         success_msg: "Mini Finance website returned HTTP 200 OK"
 ```
-
+Note
+Structured site.yml into three logically isolated plays: host dependency installation (nginx, git, rsync), application deployment via ansible.builtin.git and ansible.posix.synchronize tied to an event-driven Reload nginx handler, and controller-side HTTP verification using ansible.builtin.uri and ansible.builtin.assert.
 ---
 
 # Task 7 — Validate and Run the Ansible Playbook
@@ -275,19 +276,21 @@ Validate the syntax of the multi-play Ansible playbook and run it to install Ngi
 
 #### Screenshot 11 — Play 3 output showing the successful HTTP verification and assertion
 
-Add your screenshot here.
+![play 3 output](screenshots/play3-output.png)
 
 ---
 
 #### Screenshot 12 — Final `PLAY RECAP` showing `failed=0` and `unreachable=0`
 
-Add your screenshot here.
+![play recap](screenshots/failed-0-unre-0.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+Passed the playbook syntax check with ansible-playbook -i inventory.ini site.yml --syntax-check. Executed the full deployment playbook against managed host 3.215.180.120. Play 3 confirmed an HTTP 200 OK response from the web server, and the play recap finished cleanly with failed=0 and unreachable=0.
+
+Task 8 Notes
 
 ---
 
@@ -301,7 +304,7 @@ Confirm that the Mini Finance website is publicly accessible through the Azure V
 
 #### Screenshot 13 — Mini Finance website successfully loading in the browser, with the Azure VM’s public IP address visible in the address bar
 
-Add your screenshot here.
+![browser](screenshots/mini-fin-ans.png)
 
 ---
 
@@ -310,9 +313,10 @@ Add your screenshot here.
 Add your deployed website URL below:
 
 ```text
-http://<PUBLIC_IP>
+http://3.215.180.120
 ```
 
+Tested the public instance IP [http://3.215.180.120](http://3.215.180.120) in the browser, confirming that Nginx serves the Mini Finance landing page with full CSS and image assets loaded over port 80.
 ---
 
 # Task 9 — Create the Project README
@@ -325,7 +329,8 @@ Create a `README.md` file to document the Mini Finance infrastructure and deploy
 
 #### Screenshot 14 — Completed `README.md` displayed in the VS Code Markdown preview or terminal
 
-Add your screenshot here.
+![readme display](screenshots/readme-a1.png)
+![readme display](screenshots/readme-a2.png)
 
 ---
 
@@ -334,7 +339,42 @@ Add your screenshot here.
 Copy and paste the complete contents of your `README.md` file below:
 
 ```markdown
-Add your README.md content here.
+# Automated Cloud Provisioning & Application Deployment: Mini Finance
+
+## Project Objective
+This project demonstrates end-to-end Infrastructure as Code (IaC) and Configuration Management by provisioning an automated cloud virtual machine on AWS using Terraform, configuring the system environment with Ansible, and deploying the Mini Finance static web application via a multi-play orchestration pipeline.
+
+## Tools & Technologies
+- **Infrastructure as Code:** Terraform
+- **Cloud Provider:** Amazon Web Services (AWS EC2, VPC, Security Groups)
+- **Configuration Management:** Ansible
+- **Web Server:** Nginx
+- **Version Control & Artifact Transfer:** Git, rsync (`ansible.posix.synchronize`)
+
+## Infrastructure Provisioned
+- **VPC & Subnet:** Dedicated Virtual Private Cloud (`10.0.0.0/16`) with an isolated public subnet (`10.0.1.0/24`) and Internet Gateway.
+- **Routing:** Route table associating public outbound internet access via an AWS Internet Gateway.
+- **Security Group:** Hardened firewall allowing inbound SSH (port 22) restricted strictly to the controller IP (`/32`) and public HTTP (port 80) open to `0.0.0.0/0`.
+- **Compute:** One Ubuntu 22.04 LTS EC2 instance (`t3.micro`) configured with passwordless RSA SSH key authentication.
+
+## Ansible Deployment Workflow
+The automation is structured across three distinct plays in `site.yml`:
+1. **System & Web Server Setup (`hosts: web`, `become: true`):** Updates APT repository cache, installs `nginx`, `git`, and `rsync`, and enables the Nginx daemon on boot.
+2. **Application Delivery & Handler Execution (`hosts: web`, `become: true`):** Clones the source repository from GitHub into `/opt/mini-finance`, synchronizes web assets to `/var/www/html` excluding VCS files, ensures `www-data:www-data` ownership, and triggers an event-driven handler (`notify: Reload nginx`).
+3. **Synthetic Integration Validation (`hosts: localhost`, `connection: local`):** Executes from the controller machine, polling the managed server's public IP over HTTP port 80 via `ansible.builtin.uri` and confirming an HTTP 200 status code with `ansible.builtin.assert`.
+
+## Verification
+- **Automated Validation:** Ansible verified synthetic reachability directly from `localhost`, asserting an HTTP 200 response from the instance's public IP.
+- **Manual Verification:** Confirmed site availability and styling by navigating to `http://3.215.180.120` in a web browser.
+
+## Challenges & Solutions
+1. **Repository URL Discrepancy:** The initial playbook attempt pointed to `mini-finance-project`, which returned an HTTP 404 and caused Git to stall waiting for interactive credentials. By querying the GitHub API directly, I identified the canonical public repository URL as `mini_finance`, updated the playbook task, and resolved the hang.
+2. **Provider Plugin Timeouts:** WSL encountered network timeouts while downloading the AWS Terraform provider. I resolved this by utilizing a local provider cache (`-plugin-dir`) and syncing the provider lock file from a verified workspace, avoiding external registry download stalls.
+
+## Key Learnings
+- **Tool Separation of Concerns:** Terraform manages immutable infrastructure lifecycle events (provisioning, network boundaries, security perimeters), while Ansible handles mutable runtime operations (package installation, artifact synchronization, service orchestration).
+- **Event-Driven Handlers:** Using Ansible handlers prevents unnecessary service restarts by reloading Nginx only when source files actually change during synchronization.
+
 ```
 
 ---
@@ -361,13 +401,13 @@ Paste your LinkedIn post URL here:
 
 **One challenge you faced and how you fixed it:**
 
-Add your answer here.
+During Play 2 of the Ansible execution, the git clone task stalled indefinitely because the repository URL provided in the instructions (mini-finance-project) did not exist, prompting the background Git process to wait indefinitely for user authentication. I aborted the hanging task, diagnosed the issue by checking HTTP responses and querying the GitHub API for the user's public repositories, and discovered the correct repository name was mini_finance. After updating site.yml with the valid repository URL and cleaning up the destination directory on the server, the playbook executed cleanly.
 
 ---
 
 **One real-world example where you can use this learning:**
 
-Add your answer here.
+This automated workflow is directly applicable to continuous deployment pipelines for staging and production web environments. In a blue/green or multi-environment rollout, Terraform can be triggered to stand up identical cloud networking and virtual machines on demand, after which Ansible takes over to configure dependencies, pull the latest release artifacts from version control, reload web servers via handlers, and run automated smoke tests before routing customer traffic to the new instances.
 
 ---
 
@@ -377,61 +417,61 @@ Answer the following in your own words:
 
 **1. What did you provision using Terraform in this assignment?**
 
-Add your answer here.
+A complete AWS cloud infrastructure stack consisting of a custom Virtual Private Cloud (VPC), a public subnet, an Internet Gateway, a route table with an outbound default route, an EC2 SSH key pair, an AWS Security Group (restricting SSH to my controller IP and opening HTTP to all), and one Ubuntu 22.04 LTS EC2 instance (t3.micro).
 
 ---
 
 **2. What did Ansible configure and deploy in this assignment?**
 
-Add your answer here.
+Ansible updated the APT cache, installed the nginx, git, and rsync system packages, ensured Nginx was started and enabled on system boot, cloned the Mini Finance Git repository to /opt/mini_finance, synchronized the website files to /var/www/html/ with www-data ownership, triggered an Nginx reload handler, and verified site availability.
 
 ---
 
 **3. Why is SSH access on port `22` restricted to your public IP address?**
 
-Add your answer here.
+Restricting port 22 to a specific controller CIDR (/32) minimizes attack surface exposure. Keeping SSH closed to the global internet (0.0.0.0/0) prevents automated brute-force attempts and unauthorized remote login attempts against the cloud instance.
 
 ---
 
 **4. Why is HTTP port `80` open to the internet?**
 
-Add your answer here.
+Port 80 serves standard, unencrypted web traffic to public end users. Because the server's purpose is hosting a public-facing static demonstration site, the security group must accept inbound HTTP requests from any IP address (0.0.0.0/0).
 
 ---
 
 **5. What is the purpose of the Ansible inventory file?**
 
-Add your answer here.
+The inventory file (inventory.ini) defines the managed targets, groups them by operational role (such as [web]), and establishes host-specific connection variables—including the SSH user (ubuntu) and the private key file path required for authentication.
 
 ---
 
 **6. Why does the playbook use separate plays for install, deploy, and verify?**
 
-Add your answer here.
+Using separate plays enforces a clean separation of concerns and privilege boundaries. System installation requires elevated root privileges (become: true), deployment targets application directories, and synthetic verification runs locally from the controller (hosts: localhost, connection: local) without privilege escalation.
 
 ---
 
 **7. Why is `rsync` useful when deploying website files?**
 
-Add your answer here.
+rsync (wrapped by ansible.posix.synchronize) transfers entire directory trees efficiently by inspecting file timestamps and checksums. It synchronizes only changed or added files rather than copying the entire directory on every run, supporting idempotency.
 
 ---
 
 **8. What does the Ansible `uri` module verify in this assignment?**
 
-Add your answer here.
+It conducts an automated synthetic health check directly from the controller to the target VM over port 80, confirming that Nginx is running, accepting traffic, and returning an HTTP 200 OK status code.
 
 ---
 
 **9. What issue did you face during this assignment, and how did you fix it?**
 
-Add your answer here.
+During Play 2, the git clone task hung indefinitely because the initial repository URL was missing or private, causing Git to wait on user credentials. I inspected the GitHub account via the API, identified the correct repository name (mini_finance instead of mini-finance-project), updated site.yml, and re-ran the playbook successfully.
 
 ---
 
 **10. What did you learn from using Terraform and Ansible together?**
 
-Add your answer here.
+I learned how Terraform and Ansible complement each other across the deployment lifecycle. Terraform manages the creation of underlying network and compute infrastructure, while Ansible handles the operating system state, application artifacts, and post-deployment validation once the machines are reachable.
 
 ---
 
