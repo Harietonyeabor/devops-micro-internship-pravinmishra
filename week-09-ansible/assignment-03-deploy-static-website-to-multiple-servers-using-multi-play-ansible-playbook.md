@@ -308,13 +308,13 @@ The ansible.builtin.copy module allows the controller to act as the single sourc
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-aws-ansible-activity-7503934796931219456-s6Pp?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU`
 
 ---
 
 ### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![alt text](wk9-post3-1.png)
 
 ---
 
