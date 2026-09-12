@@ -95,8 +95,8 @@ Week 06 → AWS Cloud
  Week 08 → Terraform 
  [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/)
 
-<!-- Week 09 → Ansible -->
-<!-- [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) -->
+ Week 09 → Ansible 
+[![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) 
 
 <!-- Week 10 → Azure DevOps CI/CD -->
 <!-- [![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/) -->
@@ -140,7 +140,7 @@ Week 06 → AWS Cloud
 | 06 | AWS Cloud | ✅ Completed | ✅ Completed | [Week06-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_aws-devops-cloudengineering-activity-7496182625892741120-kwWt?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) | [Week06-Blog](https://medium.com/@harietogochukwu/architecting-resilient-cloud-systems-from-a-three-tier-aws-application-to-an-ai-assisted-security-f9de1bd7cbdb) |
 | 07 | Azure Cloud | ✅ Completed | ✅ Completed |[Week07-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-microsoftazure-cloudengineering-activity-7498386905630146565-6RBY?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) | [Week07-Blog](https://medium.com/@harietogochukwu/from-azure-infrastructure-to-ai-assisted-cloud-security-what-week-7-of-my-devops-journey-taught-me-b540dc9f27c2) |
 | 08 | Terraform | ✅ Completed  | ✅ Completed  | [Week08-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-aws-terraform-activity-7500200458670657536-Xfao?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) | [Week08-Blog](https://medium.com/@harietogochukwu/why-i-let-an-ai-agent-audit-my-aws-infrastructure-and-why-i-still-refuse-to-let-it-run-terraform-732665e8b08) |
-| 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
+| 09 | Ansible | ✅ Completed | ✅ Completed | [Week08-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-terraform-ansible-activity-7504594016697585668-z09b?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) | [Week09-Blog] (https://medium.com/@harietogochukwu/from-code-to-cloud-safely-when-automation-knows-what-to-do-and-when-to-stop-6f5bd95e473d) |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
