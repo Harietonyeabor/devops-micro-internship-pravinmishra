@@ -385,7 +385,7 @@ The automation is structured across three distinct plays in `site.yml`:
 
 #### Screenshot 15 — Published LinkedIn post showing the text and at least one deployment screenshot
 
-Add your screenshot here.
+![linkedin post](screenshots/post-ass4-wk9.png)
 
 ---
 
@@ -393,7 +393,7 @@ Add your screenshot here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/eJiDc4VY`
 
 ---
 

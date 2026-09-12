@@ -1,5 +1,4 @@
 # Assignment 1 — Create an Azure Virtual Machine using Terraform
-
 Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
 ---
@@ -10,21 +9,52 @@ In this assignment, you will use Terraform to provision a complete Azure Virtual
 
 ---
 
+# Task 0 — Set Up and Verify the Terraform and Azure CLI Environment
+## Goal
+
+Prepare your local environment for Terraform deployment by installing Terraform, Azure CLI, and the HashiCorp Terraform extension in VS Code, signing in to your Azure account, and confirming that all required tools are working correctly.
+
+### Evidence
+
+#### Screenshot 1 — Terminal showing successful terraform version output
+
+![tf version](screenshots/tf-version.png)
+
+---
+
+#### Screenshot 2 — Terminal showing successful az version output
+
+![az version](screenshots/az-version.png)
+
+
+#### Screenshot 3 — VS Code Extensions panel showing the HashiCorp Terraform extension installed and enabled
+
+![HashiCorp tf ext](screenshots/hashicorp-t.png)
+
+---
+
+# Task 1 — Create a New Terraform Project and Define the Infrastructure
+## Goal
+
+Create a new Terraform project and define the complete Azure Virtual Machine environment in main.tf by using the official Terraform Registry documentation.
+
+---
+
 # Task 1 — Create a New Terraform Project and Define the Infrastructure
 
 ## Goal
 
-Create a `terraform-azure-vm` project and define the resource group, virtual network, subnet, public IP, network interface, and Ubuntu 18.04 VM (with username/password authentication and a public IP output) in `main.tf`.
+Create a new Terraform project and define the complete Azure Virtual Machine environment in `main.tf` by using the official Terraform Registry documentation.
 
 ### Evidence
 
-#### Screenshot 1 — VS Code showing `main.tf` and the required Azure resources
+#### Screenshot 4 — VS Code showing the AzureRM provider configuration and resource group configuration in main.tf
 
-![required azure resource](tf-maintf.png)
+![required azure resource](screenshots/screenshots/tf-maintf.png)
 
 ---
 
-#### Screenshot 2 — `main.tf` showing the public IP output and VM authentication configuration, with the password hidden or redacted
+#### Screenshot 5 — `main.tf` showing the public IP output and VM authentication configuration, with the password hidden or redacted
 
 ![vm auth config](ax-linuxmachine.png)
 ![public pi output](public-ipoutput.png)
@@ -39,7 +69,7 @@ Run `terraform init` and confirm the working directory initializes successfully.
 
 ### Evidence
 
-#### Screenshot 3 — Terminal showing successful `terraform init` output
+#### Screenshot 6 — Terminal showing successful `terraform init` output
 
 ![tf init](tf-initiaiazed.png)
 
@@ -53,20 +83,20 @@ Review `terraform plan`, run `terraform apply`, and record the VM's public IP fr
 
 ### Evidence
 
-#### Screenshot 4 — Terraform plan summary showing the proposed resources
+#### Screenshot 7 — Terraform plan summary showing the proposed resources
 
 ![tf plan](tf-plan.png)
 ![tf plan](tf-plan1.png)
 
 ---
 
-#### Screenshot 5 — Terraform apply output showing successful completion
+#### Screenshot 8 — Terraform apply output showing successful completion
 
 ![tf apply](tf-apply.png)
 
 ---
 
-#### Screenshot 6 — Terraform output showing the public IP of the VM
+#### Screenshot 9 — Terraform output showing the public IP of the VM
 
 ![tf output](tf-output.png)
 
@@ -76,11 +106,11 @@ Review `terraform plan`, run `terraform apply`, and record the VM's public IP fr
 
 ## Goal
 
-Use Azure CLI to confirm the VM was created and is running.
+Confirm through Azure CLI that the virtual machine was created successfully and is currently running.
 
 ### Evidence
 
-#### Screenshot 7 — Azure CLI output showing the VM name and running status
+#### Screenshot 10 — Azure CLI output showing the VM name and running status
 
 ![verify](verify-azurecli.png)
 
@@ -90,11 +120,11 @@ Use Azure CLI to confirm the VM was created and is running.
 
 ## Goal
 
-Run `terraform destroy` to clean up the Azure resources after testing.
+Remove all Azure resources created by Terraform after completing the deployment and verification.
 
 ### Evidence
 
-#### Screenshot 8 — Terminal showing successful `terraform destroy` completion
+#### Screenshot 11 — Terminal showing successful `terraform destroy` completion
 
 ![tf destory azure](destroyazure-tf.png)
 
@@ -110,21 +140,34 @@ During this lab, I gained practical experience using Terraform to automate and m
 
 # Submission Instructions
 
-- Add all required screenshots in your submission
+- Complete all tasks in sequence and include all required screenshots specified in Tasks 0–5.
 - Include the VM public IP from the Terraform output
-- Do not expose Azure credentials, subscription details, or passwords
+- Do not expose passwords, keys, account IDs, or other sensitive information in screenshots.
+
 
 ---
 
 # Completion Checklist
 
-- [✅] Task 1: `terraform-azure-vm` project created with all required resources defined (Screenshots 1–2)
-- [✅] Task 2: `terraform init` completed successfully (Screenshot 3)
-- [✅] Task 3: Plan reviewed and `terraform apply` completed, public IP recorded (Screenshots 4–6)
-- [✅] Task 4: VM verified as running via Azure CLI (Screenshot 7)
-- [✅] Task 5: `terraform destroy` completed successfully (Screenshot 8)
+- [✅] Installed Terraform and verified it using terraform version
+- [✅] Installed Azure CLI and verified it using az version
+- [✅] Signed in to Azure using az login
+- [✅] Confirmed the correct Azure subscription
+- [✅] Installed and enabled the HashiCorp Terraform extension in VS Code
+- [✅] Created the terraform-azure-vm project directory and main.tf
+- [✅] Added the Terraform and AzureRM provider configuration
+- [✅] Defined the resource group, virtual network, subnet, public IP, and network interface
+- [✅] Defined the Linux virtual machine with username and password-based authentication
+- [✅] Added the Terraform output for the VM public IP address
+- [✅] Completed terraform init successfully
+- [✅] Reviewed the Terraform execution plan using terraform plan
+- [✅] Completed terraform apply successfully
+- [✅] Captured and recorded the VM public IP using terraform output
+- [✅] Verified that the VM is running using Azure CLI
+- [✅] Completed terraform destroy successfully
+- [✅] Captured all required screenshots
 - [✅] Learning/issues paragraph written (Notes)
-- [✅] No sensitive information exposed
+- [✅] Checked that no passwords, keys, account IDs, or other sensitive information are visible in the screenshots
 
 ---
 
