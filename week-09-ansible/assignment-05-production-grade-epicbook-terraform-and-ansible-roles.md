@@ -527,13 +527,13 @@ Verify that the EpicBook application is running, accessible in the browser, and 
 
 #### Screenshot 26 — Output of the `/cart` HTTP status check
 
-![output](cart-httpcheck.png)
+![output](screenshots/cart-httpcheck.png)
 
 ---
 
 #### Screenshot 27 — Browser showing the EpicBook application loaded from `http://<public_ip>`
 
-![browser](epicbk-ans.png)
+![browser](screenshots/epicbk-ans.png)
 
 ---
 
@@ -573,13 +573,13 @@ After the playbook completed, external HTTP requests initially returned an Nginx
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-terraform-aws-activity-7504811506455306240-T4Lu?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![Linkedin post](screenshots/post-wk-9l.png)
 
 ---
 

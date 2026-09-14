@@ -40,7 +40,7 @@ Add a screenshot of the project CLAUDE.md showing the three-tier architecture, s
 Add a screenshot showing the Terraform Engineer subagent configuration.
 
 ![Tf Engineer subagent config](screenshots/tf-engine-sagt.png)
-
+  z
 ---
 
 #### Screenshot 3 — Architecture and Security Reviewer Subagent
@@ -90,7 +90,7 @@ The diagram must show:
 
 ## Architecture Diagram
 
-Add the completed architecture diagram here.
+![Arc diagram](screenshots/arc-diagram.png)
 
 
 +-------------------------------------------------------------+
@@ -574,7 +574,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot 16 — Published LinkedIn post showing the text and at least one image or proof
 
-![published linkedin](pst-wk8-as5.png)
+![published linkedin](screenshots/pst-wk8-as5.png)
 
 ---
 

@@ -363,7 +363,7 @@ Resolve the detected difference intentionally, verify the infrastructure returns
 
 Add a screenshot of the human-reviewed resolution or `terraform apply` output where applicable.
 
-![tf apply](apply-comptd.png)
+![tf apply](screenshots/apply-comptd.png)
 
 ---
 

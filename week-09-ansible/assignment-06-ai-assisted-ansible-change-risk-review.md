@@ -444,13 +444,13 @@ If an AI agent has write or apply permissions, hallucinated parameters, misident
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-ansible-automation-activity-7505139571806887936-rnyb?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![Linkedin post](screenshots/wk9-ass5p.png)
 
 ---
 
