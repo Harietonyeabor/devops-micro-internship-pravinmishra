@@ -36,7 +36,7 @@ Add a screenshot of Azure Repos showing:
 * Project files
 * `index.html`
 
-Add your screenshot here.
+![azure static website repo](screenshots/azure-static-wrepo.png)
 
 ---
 
@@ -65,7 +65,7 @@ Add a screenshot of the saved SSH Service Connection **Overview** page showing:
 * Service Connection name
 * SSH connection type
 
-Add your screenshot here.
+![ssh service](screenshots/ssh-connection.png)
 
 > Do not expose a password, SSH private key, passphrase, or another credential.
 
@@ -91,7 +91,7 @@ Add a screenshot of `azure-pipelines.yml` open in the Azure Repos editor showing
 * `CopyFilesOverSSH@0` task
 * `SSH@0` verification task
 
-Add your screenshot here.
+![azure pipeline](screenshots/azure-pipeline-yaml.png)
 
 > Ensure that no password, SSH private key, PAT, or AWS credential is visible.
 
@@ -115,7 +115,7 @@ Add a screenshot of the successful pipeline run and log summary showing:
 * Remote-verification step completed
 * Your Full Name visible in the pipeline output
 
-Add your screenshot here.
+![successful pipeline](screenshots/azure-pipeline-yaml-1.png)
 
 ---
 
@@ -136,7 +136,7 @@ Add a browser screenshot showing:
 * Your Full Name
 * Updated website content after the automatic deployment
 
-Add your screenshot here.
+![deloyed azure website](screenshots/deployed-website.png)
 
 ## Final Website URL
 
@@ -144,7 +144,7 @@ Add your screenshot here.
 
 Replace the placeholder with your actual website URL:
 
-[Paste your final website URL here]
+[http://44.203.234.83/]
 
 ---
 
@@ -152,7 +152,23 @@ Replace the placeholder with your actual website URL:
 
 Write a short summary of the completed CI/CD workflow.
 
-[Write your summary here.]
+[Assignment Summary: Multi-Cloud Static Website CI/CD Deployment
+
+This project implemented an automated, end-to-end continuous integration and deployment (CI/CD) pipeline deploying a static web application to Amazon Web Services (AWS) using Azure DevOps.
+
+Infrastructure as Code (Terraform): Provisioned the base cloud infrastructure on AWS, including an isolated VPC, public/private subnets, internet gateway, security groups (opening ports 22 and 80), and an Ubuntu 22.04 LTS EC2 target instance (44.203.234.83).
+
+Configuration Management (Ansible): Automated the system setup on the target VM by running an idempotent playbook from WSL. The configuration installed and started Nginx, configured secure permissions for the web directory (/var/www/html), and established temporary lab credentials for remote access.
+
+Service Integration: Linked Azure DevOps to the target AWS instance using a dedicated SSH Service Connection (ubuntu-nginx-ssh).
+
+Multi-Stage CI/CD Pipeline (Azure Pipelines): Orchestrated the deployment workflow on a self-hosted Linux agent pool (SelfHostedPool) across two distinct stages:
+
+Build & Validation: Checked out the source repository (Azure-Static-Website), validated essential entry points (index.html), and published the build drop artifacts.
+
+Deployment: Downloaded the artifacts, securely transferred them over SCP to /var/www/html via the SSH Service Connection, applied least-privilege permissions, and issued a zero-downtime Nginx reload.
+
+Verification: Confirmed the deployment with a 100% green pipeline run and verified live web traffic serving HTTP 200 OK over the public target endpoint.]
 
 ---
 
@@ -167,11 +183,11 @@ Add a screenshot of your LinkedIn post containing:
 * Three to five lines describing the CI/CD workflow
 * A screenshot of the successful pipeline or deployed website
 
-Add your screenshot here.
+![Linkedin Post](screenshots/linkedinpost-wk10ass2.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here]
+[https://lnkd.in/p/e-vf7WWu]
 
 > Do not expose AWS credentials, SSH private keys, passwords, PATs, or other sensitive information.
 

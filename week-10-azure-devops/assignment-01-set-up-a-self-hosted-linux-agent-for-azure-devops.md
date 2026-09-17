@@ -58,7 +58,7 @@ Add a screenshot from AWS or Azure showing:
 * VM status as **Running**
 * Public IP address
 
-Add your screenshot here.
+![ubuntu vm running](screenshots/ubuntuvm-running.png)
 
 ---
 
@@ -72,7 +72,7 @@ Add an SSH terminal screenshot showing the output of:
 
 The screenshot must confirm a supported Ubuntu version, `x86_64` architecture, and a successful HTTP response from Azure DevOps.
 
-Add your screenshot here.
+![ssh output](screenshots/sshterminal-output.png)
 
 ---
 
@@ -93,7 +93,8 @@ Add a terminal screenshot showing:
 * Agent service start
 * `sudo ./svc.sh status` reporting that the service is running
 
-Add your screenshot here.
+![config successful](screenshots/agent-added.png)
+![status running](screenshots/service-active.png)
 
 > Ensure that the PAT is not visible.
 
@@ -116,7 +117,7 @@ Add a screenshot of the Azure DevOps Agent Pool **Agents** page showing:
 * Agent status as **Online**
 * Agent enabled and available
 
-Add your screenshot here.
+![Agent online](screenshots/agentpool-running.png)
 
 ---
 
@@ -156,7 +157,8 @@ Add a screenshot of the successful Azure DevOps pipeline run showing:
 * Output from `df -h`
 * Output from `pwd`
 
-Add your screenshot here.
+![overall status](screenshots/pipeline-success.png)
+![pipeline-yml](screenshots/pipeline-yml.png)
 
 ---
 
@@ -165,7 +167,25 @@ Add your screenshot here.
 Paste the contents of your completed `azure-pipelines.yml` file below.
 
 ```yaml
-# Paste your completed azure-pipelines.yml here
+trigger: none
+
+pool:
+  name: SelfHostedPool
+
+steps:
+  - bash: |
+      echo "Submitted by: Henrietta Ogochukwu Okechukwu"
+      echo "Agent name: $(Agent.Name)"
+      echo "Machine name: $(Agent.MachineName)"
+      echo "Operating system details:"
+      uname -a
+      echo "User executing the pipeline:"
+      whoami
+      echo "Disk usage:"
+      df -h
+      echo "Current working directory:"
+      pwd
+    displayName: 'Verify self-hosted Ubuntu agent'
 ```
 
 > Do not include your PAT, SSH private key, password, or cloud credentials in the YAML file.
@@ -176,7 +196,13 @@ Paste the contents of your completed `azure-pipelines.yml` file below.
 
 Write a short summary of what you configured.
 
-[Write your summary here.]
+[### Summary of Configuration
+In this assignment, I configured a self-hosted Linux build agent on an AWS EC2 Ubuntu 22.04 LTS instance and integrated it with Azure DevOps Pipelines. 
+
+1. **Authentication & Governance:** Provisioned an Azure DevOps organization and project, and generated a scoped Personal Access Token (PAT) with restricted permissions (`Agent Pools: Read & manage` and `Build: Read & execute`) following least privilege.
+2. **Agent Pool Architecture:** Established a dedicated self-hosted agent pool (`SelfHostedPool`) at the organization level and bound it directly to the project pipelines.
+3. **VM Setup & Systemd Automation:** Provisioned an Ubuntu 22.04 LTS instance with outbound HTTPS access (port 443) and secured inbound SSH (port 22 restricted to my IP). Downloaded and registered the Linux agent listener using `./config.sh`, and configured it as an active background daemon using systemd (`./svc.sh`).
+4. **CI/CD Pipeline Validation:** Authored and committed a declarative `azure-pipelines.yml` targeting `SelfHostedPool`. Executed a test pipeline verifying that commands (`uname -a`, `whoami`, `df -h`, `pwd`) execute directly within the self-hosted environment under the non-root `ubuntu` user, confirming successful communication between Azure DevOps and the remote Linux host.]
 
 ---
 
@@ -191,9 +217,9 @@ Add a screenshot of your LinkedIn post showing:
 * Three to five lines explaining your experience
 * A screenshot of the successful pipeline run with no secrets visible
 
-Add your screenshot here.
+![Linkedin post](screenshots/linkdpost-ass1wk10.png)
 
-**LinkedIn Post URL:** [Paste your LinkedIn post URL here]
+**LinkedIn Post URL:** [https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-azuredevops-cicd-activity-7506395972898471936-FSGc?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU]
 
 ---
 

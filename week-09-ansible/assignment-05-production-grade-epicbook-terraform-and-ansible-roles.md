@@ -447,7 +447,7 @@ The playbook should run the roles in this order:
 
 #### Screenshot 20 — Final Ansible recap showing `failed=0`
 
-![final](faied-ans.png)
+![final](screenshots/faied-ans.png)
 
 ---
 

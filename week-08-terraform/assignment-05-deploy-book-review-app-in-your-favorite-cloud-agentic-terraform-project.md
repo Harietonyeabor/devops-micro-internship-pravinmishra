@@ -572,7 +572,7 @@ Paste your LinkedIn post URL here:
 
 ---
 
-#### Screenshot 16 — Published LinkedIn post showing the text and at least one image or proof
+#### Screenshot  — Published LinkedIn post showing the text and at least one image or proof
 
 ![published linkedin](screenshots/pst-wk8-as5.png)
 
