@@ -20,7 +20,7 @@ Import `https://github.com/pravinmishraaws/my-react-app` into Azure Repos and co
 
 #### Screenshot 1 — Azure Repos showing the imported React project with `package.json` and `src/` visible
 
-Add your screenshot here.
+![repo showing imported repo](screenshots/imported-react-proj.png)
 
 ---
 
@@ -34,13 +34,13 @@ Provision a new Ubuntu VM with Terraform (ports 22/80 open) and prepare Nginx/`/
 
 #### Screenshot 2 — Terraform output or cloud console showing the new VM and public IP
 
-Add your screenshot here.
+![tf output ip](screenshots/vm-publicip.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing Ansible completed successfully and Nginx is active
 
-Add your screenshot here.
+![showing successfully](completedsuccesfuly-nginxact.png)
 
 ---
 
@@ -54,7 +54,7 @@ Point the `ubuntu-nginx-ssh` Service Connection to the new VM and validate it.
 
 #### Screenshot 4 — SSH Service Connection page showing the new VM connection and successful validation, with the password hidden
 
-Add your screenshot here.
+![validation](screenshots/succesful-validation.png)
 
 ---
 
@@ -68,7 +68,7 @@ Create the Build (npm install/build), Test (`npm test -- --watchAll=false`, bloc
 
 #### Screenshot 5 — Azure Pipeline YAML definition with the Build, Test, Publish, and Deploy sections visible
 
-Add your screenshot here.
+![azure pipe;ine yaml](screenshots/trigger-build.png)
 
 ---
 
@@ -82,19 +82,19 @@ Confirm a commit to `main` triggers the pipeline, all four stages succeed, the b
 
 #### Screenshot 6 — Pipeline run summary showing Build, Test, Publish, and Deploy succeeded
 
-Add your screenshot here.
+![pipeline summary](screenshots/pipeline-run-summary.png)
 
 ---
 
 #### Screenshot 7 — Terminal or pipeline output showing `/var/www/html` after deployment
 
-Add your screenshot here.
+![Terminal](screenshots/termi-op.png)
 
 ---
 
 #### Screenshot 8 — Browser showing the running React application with the public IP visible
 
-Add your screenshot here.
+![browser](screenshots/browser-3-azdev.png)
 
 ---
 
@@ -110,13 +110,13 @@ Publish a LinkedIn post about the completed assignment, mentioning the Build/Tes
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/eFVVNEgk`
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the text and at least one link or image
 
-Add your screenshot here.
+![linkedin post](screenshots/wk10ass3-post.png)
 
 ---
 
