@@ -20,7 +20,8 @@ Prepare `infra-epicbook` (Terraform for network, frontend/backend VMs, MySQL, wi
 
 #### Screenshot 1 — Both repositories showing their required files and separation of responsibilities
 
-Add your screenshot here.
+![Epic book Structure](screenshots/theepicbk-structure.png)
+![Infra Book Structure](screenshots/infrabk-structure.png)
 
 ---
 
@@ -34,7 +35,10 @@ Create and validate an Azure Resource Manager SPN service connection (Tenant ID,
 
 #### Screenshot 2 — Azure Resource Manager service connection showing successful configuration with secrets hidden
 
-Add your screenshot here.
+![secrets](secrets-key.png)
+"Per the project walkthrough architecture decision, AWS is utilized as the infrastructure cloud provider while retaining Azure DevOps for CI/CD. Authentication is managed via the Azure DevOps Variable Group Epicbook-aws-secrets (with credentials masked and locked), authorized directly for Epicbook-infra-pipeline."
+
+AWS is utilized for the infrastructure provider. Authentication is securely managed using the Azure DevOps Variable Group Epicbook-aws-secrets (with credentials masked), authorized directly for the Infrastructure Pipeline."
 
 ---
 
@@ -48,7 +52,7 @@ Create a YAML pipeline for `infra-epicbook` that authenticates via the SPN conne
 
 #### Screenshot 3 — Infra Pipeline run showing `terraform apply` completion and the `app_public_ip` and `mysql_fqdn` outputs
 
-Add your screenshot here.
+![tf apply](screenshots/tfapply-azdev.png)
 
 ---
 
@@ -68,13 +72,13 @@ Upload the SSH private key to Azure DevOps Secure Files, create a YAML pipeline 
 
 #### Screenshot 5 — App Pipeline run summary showing successful completion
 
-Add your screenshot here.
+![alt text](showing-success.png)
 
 ---
 
 #### Screenshot 6 — Ansible playbook output showing successful configuration with `failed=0`
 
-Add your screenshot here.
+![alt text](ans-playbook-success.png)
 
 ---
 
@@ -88,7 +92,7 @@ Confirm both pipelines succeeded, the EpicBook application loads through the fro
 
 #### Screenshot 7 — Browser displaying the running EpicBook application with the frontend public IP visible
 
-Add your screenshot here.
+![alt text](epicbk-azdev.png)
 
 ---
 
@@ -96,7 +100,17 @@ Add your screenshot here.
 
 Record the frontend public application URL and a short issue-and-resolution note, if applicable.
 
-Write your answer here.
+Frontend Public Application URL:
+
+[http://16.16.65.205](http://16.16.65.205)
+
+Issue and Resolution Note:
+
+During the backend role deployment, the application failed to start (ERR_CONNECTION_REFUSED / 502 Bad Gateway) due to two distinct configuration hurdles:
+
+Sequelize Dialect & Environment Mapping: In production mode, Sequelize expected the database connection string via JAWSDB_URL. This was resolved by templating an explicit config.json with host, port, dialect, and credentials, while simultaneously providing a formatted JAWSDB_URL string in .env.
+
+Database Authentication Mismatch: The backend service encountered an ER_ACCESS_DENIED_ERROR (1045) because the master user credentials required synchronization between the Azure DevOps variable group and the AWS RDS MySQL instance. The RDS instance master password was synchronized to EpicbookSecure2026#, the initial schema (BuyTheBook_Schema.sql) and seed data (author_seed.sql, books_seed.sql) were loaded into the bookstore database, and the Ansible backend role was re-executed, bringing epicbook.service to active (running).
 
 ---
 
@@ -112,13 +126,13 @@ Publish a LinkedIn post about the completed capstone project, mentioning the two
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/dqytxeVr`
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the text and at least one link or image
 
-Add your screenshot here.
+![alt text](wk5-ass10-lkdp.png)
 
 ---
 
