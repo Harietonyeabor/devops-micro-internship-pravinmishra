@@ -56,9 +56,9 @@ Create a YAML pipeline for `infra-epicbook` that authenticates via the SPN conne
 
 ---
 
-#### Screenshot 4 — Azure Portal confirming the provisioned resources
+#### Screenshot 4 — Azure/Aws Portal confirming the provisioned resources
 
-Add your screenshot here.
+![AWS PORTAL](screenshots/aws-portal.png)
 
 ---
 
@@ -72,13 +72,13 @@ Upload the SSH private key to Azure DevOps Secure Files, create a YAML pipeline 
 
 #### Screenshot 5 — App Pipeline run summary showing successful completion
 
-![alt text](showing-success.png)
+![alt text](screenshots/showing-success.png)
 
 ---
 
 #### Screenshot 6 — Ansible playbook output showing successful configuration with `failed=0`
 
-![alt text](ans-playbook-success.png)
+![alt text](screenshots/ans-playbook-success.png)
 
 ---
 
@@ -92,7 +92,7 @@ Confirm both pipelines succeeded, the EpicBook application loads through the fro
 
 #### Screenshot 7 — Browser displaying the running EpicBook application with the frontend public IP visible
 
-![alt text](epicbk-azdev.png)
+![browser output](screenshots/epicbk-azdev.png)
 
 ---
 
@@ -132,7 +132,7 @@ Paste your LinkedIn post URL here:
 
 #### Screenshot — Published LinkedIn post showing the text and at least one link or image
 
-![alt text](wk5-ass10-lkdp.png)
+![alt text](screenshots/wk5-ass10-lkdp.png)
 
 ---
 

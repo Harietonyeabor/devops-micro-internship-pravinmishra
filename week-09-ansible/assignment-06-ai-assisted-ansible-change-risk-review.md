@@ -22,19 +22,19 @@ Confirm that your previous EpicBook Ansible project is working before creating t
 
 #### Screenshot 1 — Output of `ansible web -i inventory.ini -m ping`
 
-![output](success-health.png)
+![output](screenshots/success-health.png)
 
 ---
 
 #### Screenshot 2 — Output of `ansible-playbook -i inventory.ini site.yml --syntax-check`
 
-![playbook](site-playbkh.png)
+![playbook](screenshots/site-playbkh.png)
 
 ---
 
 #### Screenshot 3 — Output of `pwd` and `find . -maxdepth 4 -type d | sort`
 
-![output](output-ass9-3.png)
+![output](screenshots/output-ass9-3.png)
 
 ---
 
@@ -64,7 +64,7 @@ Create a `CLAUDE.md` file that tells Claude Code how this project must behave.
 
 #### Screenshot 4 — `CLAUDE.md` open in VS Code or terminal showing the safety rules
 
-![claude.md](cat-claude.png)
+![claude.md](screenshots/cat-claude.png)
 
 ---
 
@@ -100,9 +100,9 @@ Use Claude Code to produce a read-only plan before writing the Bash script.
 
 #### Screenshot 5 — Claude Code showing the four-category risk-classification plan
 
-![alt text](reviewed-claude1.png)
-![alt text](reviewed-claude2.png)
-![alt text](reviewed-claude3.png)
+![alt text](screenshots/reviewed-claude1.png)
+![alt text](screenshots/reviewed-claude2.png)
+![alt text](screenshots/reviewed-claude3.png)
 ---
 
 ### Notes
@@ -137,25 +137,25 @@ Create a Bash script that runs an Ansible dry run and classifies risky changes.
 
 #### Screenshot 6 — Top section of `ansible-check-review.sh` showing `full_name`, `playbook_path`, `inventory_path`, and the `checks` array
 
-![top section](top-section.png)
+![top section](screenshots/top-section.png)
 
 ---
 
 #### Screenshot 7 — Middle section showing `extract_changed_tasks` and `check_tasks_matching_pattern`
 
-![middle sec](middle-section.png)
+![middle sec](screenshots/middle-section.png)
 
 ---
 
 #### Screenshot 8 — Bottom section showing the loop, summary, and exit behavior
 
-![bottom section](bottom-section.png)
+![bottom section](screenshots/bottom-section.png)
 
 ---
 
 #### Screenshot 9 — Output of `bash -n ansible-check-review.sh` and `ls -l ansible-check-review.sh`
 
-![bash output](output-bash.png)
+![bash output](screenshots/output-bash.png)
 
 ---
 
@@ -203,13 +203,13 @@ Run the script against your current EpicBook playbook and confirm the baseline r
 
 #### Screenshot 10 — Output of `./ansible-check-review.sh`
 
-![review.sh](ansible-sh.png)
+![review.sh](screenshots/ansible-sh.png)
 
 ---
 
 #### Screenshot 11 — Output of `echo "Captured Exit Code: $script_exit_code"` and `cat reports/ansible-risk-report.txt`
 
-![cat report](cat-ansible-riskrpt.png)
+![cat report](screenshots/cat-ansible-riskrpt.png)
 
 ---
 
@@ -251,14 +251,14 @@ Turn the Bash script into a reusable Claude Code skill called `/ansible-risk-rev
 
 #### Screenshot 12 — `SKILL.md` showing the frontmatter, allowed tools, and safety rules
 
-![skill.md](skill-md-ans.png)
+![skill.md](screenshots/skill-md-ans.png)
 
 ---
 
 #### Screenshot 13 — Claude Code output after running `/ansible-risk-review`
 
-![alt text](ansible-skillrv1.png)
-![alt text](ans-rv-2.png)
+![alt text](screenshots/ansible-skillrv1.png)
+![alt text](screenshots/ans-rv-2.png)
 
 ---
 
@@ -306,25 +306,25 @@ Add a small controlled risky change in your lab playbook and confirm the script 
 
 #### Screenshot 14 — The added risky task inside the role file
 
-![alt text](added-risk.png)
+![alt text](screenshots/added-risk.png)
 
 ---
 
 #### Screenshot 15 — Output of `./ansible-check-review.sh`
 
-![alt text](ans-rv.png)
+![alt text](screenshots/ans-rv.png)
 
 ---
 
 #### Screenshot 16 — Claude Code `/ansible-risk-review` output showing the risky finding
 
-![risk finding](risk-task.png)
+![risk finding](screenshots/risk-task.png)
 
 ---
 
 #### Screenshot 17 — Output of `cat reports/risky-change-report.txt`
 
-![output](scrn-17ans.png)
+![output](screenshots/scrn-17ans.png)
 
 ---
 
@@ -372,33 +372,33 @@ Review the risky-change report, apply the playbook manually as the human operato
 
 #### Screenshot 18 — Output of the real playbook run showing the final recap with `failed=0`
 
-![alt text](failed-0ans.png)
+![alt text](screenshots/failed-0ans.png)
 
 ---
 
 #### Screenshot 19 — Output of `ansible web -i inventory.ini -m ping`
 
-![alt text](19-ans.png)
+![alt text](screenshots/19-ans.png)
 
 ---
 
 #### Screenshot 20 — Second `/ansible-risk-review` output after applying the change
 
-![alt text](2nd-ansr1.png)
-![alt text](2nd-ansr2.png)
-![alt text](2nd-ansr3.png)
+![alt text](screenshots/2nd-ansr1.png)
+![alt text](screenshots/2nd-ansr2.png)
+![alt text](screenshots/2nd-ansr3.png)
 
 ---
 
 #### Screenshot 21 — Output of `ls -lah reports`
 
-![alt text](ls-ans.png)
+![alt text](screenshots/ls-ans.png)
 
 ---
 
 #### Screenshot 22 — `change-summary.md` showing all required sections and your Full Name
 
-![alt text](change-md.png)
+![alt text](screenshots/change-md.png)
 
 ---
 

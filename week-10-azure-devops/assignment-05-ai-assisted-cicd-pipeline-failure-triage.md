@@ -20,7 +20,8 @@ Confirm the latest run on both Azure DevOps and GitHub Actions currently succeed
 
 #### Screenshot 1 — Latest run status on Azure DevOps and/or GitHub Actions showing a successful run
 
-Add your screenshot here.
+![successful](screenshots/showing-success-1.png)
+![latest run](screenshots/latest-run.png)
 
 ---
 
@@ -34,7 +35,7 @@ Create `CLAUDE.md` describing the pipeline-triage workflow (gather → analyze �
 
 #### Screenshot 2 — `CLAUDE.md` showing the workflow and safety rules
 
-Add your screenshot here.
+![claude workflpw safety rules](screenshots/workflw-safetyrules.png)
 
 ---
 
@@ -48,7 +49,7 @@ Build `pipeline-triage.sh`, a read-only Bash script that fetches the latest run'
 
 #### Screenshot 3 — `pipeline-triage.sh` showing the check functions and their pattern-matching conditionals
 
-Add your screenshot here.
+![check functions and pattern matching](screenshots/check-funtions.png)
 
 ---
 
@@ -62,7 +63,7 @@ Run the script against your current, passing pipeline and confirm it produces a 
 
 #### Screenshot 4 — Script output and report showing a healthy result with no failure category triggered
 
-Add your screenshot here.
+![healthy result](screenshots/health-result.png)
 
 ---
 
@@ -76,13 +77,13 @@ Create a Claude Code skill restricted to read-only tools (no `Write`) that runs 
 
 #### Screenshot 5 — `SKILL.md` frontmatter showing the tool restrictions and safety rules
 
-Add your screenshot here.
+![skill.md](screenshots/tool-restrictn.png)
 
 ---
 
 #### Screenshot 6 — `/pipeline-triage` output for the healthy pipeline
 
-Add your screenshot here.
+![healthy output](screenshots/pipeline-triage.png)
 
 ---
 
@@ -96,13 +97,14 @@ Introduce one safe, obvious, and easily reversible failure (for example, an inte
 
 #### Screenshot 7 — The failed pipeline run showing the red/failed status
 
-Add your screenshot here.
+![failed pipeline](screenshots/pipeline-failed.png)
 
 ---
 
 #### Screenshot 8 — `/pipeline-triage` output showing the diagnosed failure category, the quoted log evidence, and the recommended fix
 
-Add your screenshot here.
+![failed evidence](screenshots/failed-p1.png)
+![failed evidence](screenshots/failed-p2.png)
 
 ---
 
@@ -116,13 +118,16 @@ Apply the recommended fix yourself, push it, confirm the pipeline succeeds again
 
 #### Screenshot 9 — The pipeline run succeeding after your fix
 
-Add your screenshot here.
+![successful fix](screenshots/rec-p1.png)
+![successful fix](screenshots/rec-p2.png)
 
 ---
 
 #### Screenshot 10 — Second `/pipeline-triage` output confirming the pipeline is healthy again
 
-Add your screenshot here.
+![healthy again](screenshots/h-again1.png)
+![healthy again](screenshots/h-again2.png)
+![healthu again](screenshots/h-again3.png)
 
 ---
 
@@ -130,7 +135,21 @@ Add your screenshot here.
 
 Explain, in your own words, why the skill was allowed to gather evidence and diagnose the failure but was never allowed to re-trigger the pipeline or apply the fix itself.
 
-Add your answer here
+
+The triage skill is kept strictly **read-only** to ensure human-in-the-loop safety for four main reasons:
+
+1. **Prevents Damaging "Retry Loops"**
+If the AI makes a wrong guess, edits a file, and reruns the pipeline, it could trigger a continuous loop of broken builds. That wastes CI/CD minutes and clutters the Git history with bad commits.
+2. **Protects Live Cloud Infrastructure**
+Pipelines connect directly to AWS with real deployment permissions. Letting an AI trigger runs without approval creates a serious risk of accidentally modifying live databases, security settings, or servers.
+3. **AI Recommends, Humans Decide**
+AI models are great at finding needles in haystacks—like spotting an unclosed bracket or indentation error in seconds. But an AI doesn’t know the broader business context, upcoming releases, or team rules. A human engineer must always review the diagnosis before applying a change.
+4. **Accountability and Clear Audit Trails**
+In any engineering team, every code change and deployment must trace back to a specific person who verified it. If an automated tool makes live changes on its own, it breaks the audit trail.
+
+**The Golden Rule:**
+
+Let AI handle the tedious work—reading logs, finding the bug, and explaining the fix—while the human engineer keeps the keys to approve the change and run the pipeline.
 
 ---
 

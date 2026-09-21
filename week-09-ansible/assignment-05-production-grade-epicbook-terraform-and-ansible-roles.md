@@ -349,13 +349,13 @@ Create the `epicbook` role to deploy the EpicBook application, connect it to the
 
 #### Screenshot 16 — Task or file showing how the database connection is configured, with secrets hidden
 
-![db](db-output.png)
+![db](screenshots/db-output.png)
 
 ---
 
 #### Screenshot 17 — Task or output showing the EpicBook application managed by PM2
 
-![alt text](pms-ans.png)
+![alt text](screenshots/pms-ans.png)
 
 ---
 
@@ -399,7 +399,7 @@ The `group_vars/web.yml` file stores values that can be reused across the Ansibl
 
 #### Screenshot 18 — `group_vars/web.yml` showing the application, PM2, and database variables, with passwords hidden or masked
 
-![group_vars](epicbk-vault.png)
+![group_vars](screenshots/epicbk-vault.png)
 
 ---
 
@@ -441,7 +441,7 @@ The playbook should run the roles in this order:
 
 #### Screenshot 19 — Ansible playbook output showing the roles running
 
-![alt text](task-across.png)
+![alt text](screenshots/task-across.png)
 
 ---
 
@@ -453,21 +453,21 @@ The playbook should run the roles in this order:
 
 #### Screenshot 21 — Output of `ansible web -i inventory.ini -m command -a "systemctl is-active nginx" --become`
 
-![alt text](active-nginx.png)
+![alt text](screenshots/active-nginx.png)
 
 ---
 
 #### Screenshot 22 — Output of `ansible web -i inventory.ini -m command -a "pm2 status"`
 
-![alt text](pm2-1.png)
-![alt text](pms-ans-2.png)
+![alt text](screenshots/pm2-1.png)
+![alt text](screenshots/pms-ans-2.png)
 
 
 ---
 
 #### Screenshot 23 — Output of `ansible web -i inventory.ini -m command -a "curl -I http://localhost:8080"`
 
-![alt text](scrn21-ok.png)
+![alt text](screenshots/scrn21-ok.png)
 
 ---
 

@@ -98,8 +98,8 @@ Week 06 → AWS Cloud
  Week 09 → Ansible 
 [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) 
 
-<!-- Week 10 → Azure DevOps CI/CD -->
-<!-- [![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/) -->
+Week 10 → Azure DevOps CI/CD 
+ [![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/) 
 
 <!-- Week 11 → Docker -->
 <!-- [![Week 11 – Docker](./badges/week-11.svg)](./week-11-docker/) -->
@@ -141,7 +141,7 @@ Week 06 → AWS Cloud
 | 07 | Azure Cloud | ✅ Completed | ✅ Completed |[Week07-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-microsoftazure-cloudengineering-activity-7498386905630146565-6RBY?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) | [Week07-Blog](https://medium.com/@harietogochukwu/from-azure-infrastructure-to-ai-assisted-cloud-security-what-week-7-of-my-devops-journey-taught-me-b540dc9f27c2) |
 | 08 | Terraform | ✅ Completed  | ✅ Completed  | [Week08-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-aws-terraform-activity-7500200458670657536-Xfao?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) | [Week08-Blog](https://medium.com/@harietogochukwu/why-i-let-an-ai-agent-audit-my-aws-infrastructure-and-why-i-still-refuse-to-let-it-run-terraform-732665e8b08) |
 | 09 | Ansible | ✅ Completed | ✅ Completed | [Week08-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-terraform-ansible-activity-7504594016697585668-z09b?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) | [Week09-Blog] (https://medium.com/@harietogochukwu/from-code-to-cloud-safely-when-automation-knows-what-to-do-and-when-to-stop-6f5bd95e473d) |
-| 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
+| 10 | Azure DevOps (CI/CD) | ✅ Completed | ✅ Completed | [Week10-Post] (https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-azuredevops-cicd-activity-7506395972898471936-FSGc?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) | [Week10-Blog] (https://medium.com/@harietogochukwu/i-let-an-ai-triage-my-broken-ci-cd-pipeline-heres-why-i-refused-to-give-it-the-car-keys-67492adbcf22) |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
