@@ -159,7 +159,7 @@ Complete all tasks in sequence.
 
 Your submission must include:
 - All 10 required screenshots
-- Never expose a Personal Access Token, service connection credential, or GitHub token in a screenshot
+- Never expose a Personal Access Token, service connection credential, or GitHub token in a screenshot.
 
 ---
 
