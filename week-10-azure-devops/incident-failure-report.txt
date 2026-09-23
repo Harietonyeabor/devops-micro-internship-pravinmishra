@@ -1,0 +1,8 @@
+PIPELINE TRIAGE REPORT - INCIDENT DRILL
+Status: FAILED
+Pipeline: Epicbook-App-Pipeline (Run 26)
+Failure Category: Build Failure - Ansible Syntax Error
+Evidence:
+[ERROR]: YAML parsing failed: While parsing a block mapping did not find expected key.
+site.yml:19 - deliberate_syntax_error: [invalid yaml indentation
+Recommended Fix: Revert or correct the invalid YAML syntax on line 19 of site.yml.

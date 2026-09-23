@@ -1,0 +1,6 @@
+PIPELINE TRIAGE REPORT - HEALTHY BASELINE
+Status: HEALTHY
+Exit Code: 0
+Epicbook-infra-pipeline (ID: 6): Succeeded
+Epicbook-App-Pipeline (ID: 5): Succeeded
+Zero active failures detected across branches.
