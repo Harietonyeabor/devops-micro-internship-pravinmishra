@@ -139,7 +139,7 @@ Add a screenshot of `azure-pipelines.yml` open in the Azure Repos editor showing
 * Your Full Name
 * Linux verification commands
 
-Add your screenshot here.
+![yml pipeline](screenshots/pipeline-yml.png)
 
 ---
 
