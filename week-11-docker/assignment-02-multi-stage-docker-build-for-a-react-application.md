@@ -76,7 +76,7 @@ Create an optimized multi-stage Docker image with separate builder and Nginx run
 
 Add a screenshot showing the completed multi-stage `Dockerfile`.
 
-Add your screenshot here.
+![Docker file content](screenshots/cat-dock-f.png)
 
 ---
 
@@ -90,7 +90,7 @@ http://localhost
 
 Ensure that your full name is visible in the application.
 
-Add your screenshot here.
+![Mutistage app in browser](screenshots/full-n-vis.png)
 
 ---
 
@@ -117,7 +117,7 @@ react-single:latest
 react-multistage:latest
 ```
 
-Add your screenshot here.
+![Image Sizes](screenshots/disk-sizes.png)
 
 ---
 
@@ -126,15 +126,16 @@ Add your screenshot here.
 Record the image sizes and calculate the reduction using the same unit for both images.
 
 ```text
-Single-stage image size: Add size here
+Single-stage image size: 48.8 MB (or ~1.09 GB with full node:20)
 
-Multi-stage image size: Add size here
+Multi-stage image size: 26.6 MB
 
 Percentage reduction =
 ((Single-stage image size − Multi-stage image size)
 ÷ Single-stage image size) × 100
 
-Percentage reduction: Add result here
+
+Percentage reduction: 45.49%
 ```
 
 ---
@@ -156,7 +157,14 @@ Write a short analysis of 5–8 lines covering:
 - How smaller images improve image pull and deployment speed
 - One Docker build-caching optimization you used
 
-Write your analysis here.
+Footprint & Dependency Optimization:
+The single-stage build retains runtime dependencies, build-time packages, and tooling inside the image. The multi-stage build uses Node.js strictly during Stage 1 (builder) to generate production HTML/JS files, then copies only those compiled static assets into Stage 2 (nginx:alpine), drastically shrinking the final footprint.
+
+Security Surface Hardening:
+Eliminating Node.js, npm, shell compilers, and unneeded node_modules from the production runtime image reduces the attack surface and eliminates vulnerable CVE dependencies in production environments.
+
+Deployment Velocity & Cost Efficiency:
+Smaller container images download and unpack much faster across CI/CD registries and cloud hosts, accelerating automated deployments, reducing bandwidth costs, and enabling rapid scaling
 
 ---
 
