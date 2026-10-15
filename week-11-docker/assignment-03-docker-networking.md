@@ -217,7 +217,7 @@ docker exec frontend wget -qO- http://backend
 
 The output must display the Nginx Welcome Page HTML.
 
-![alt text](communicatn.png)
+![Nginx welcome page](screenshots/communicatn.png)
 
 ---
 
@@ -225,7 +225,7 @@ The output must display the Nginx Welcome Page HTML.
 
 Add a screenshot of the terminal showing a successful connection to `db` on port `27017` from the `backend` container.
 
-![alt text](be-apk.png)
+![BE DB](screenshots/be-apk.png)
 
 ---
 
@@ -239,7 +239,7 @@ The output must include:
 Expected result: frontend cannot reach db
 ```
 
-![alt text](fe-apk.png)
+![FE](screenshots/fe-apk.png)
 
 ---
 
@@ -333,23 +333,20 @@ Write a short note explaining:
 - Why the frontend could not access the database in Task 3
 - The difference between bridge mode and host network mode
 
-Default Bridge Networking:
-
+**Default Bridge Networking:**
 The default bridge network is automatically provided by Docker. Containers attached to it can communicate using internal IP addresses, but they cannot resolve each other by container name because the default bridge lacks an embedded DNS server. External accessibility requires explicit port mapping (-p host_port:container_port).
 
-Container-Name Communication on a Custom Bridge Network:
-
+**Container-Name Communication on a Custom Bridge Network:**
 Custom bridge networks activate Docker's embedded DNS server. Any containers connected to the same custom bridge can automatically discover and reach each other using their container names as hostnames (e.g., http://web), eliminating the need to hardcode volatile IP addresses.
 
-Multi-Tier Isolation (Why Frontend Could Not Access Database in Task 3):
-
+**Multi-Tier Isolation (Why Frontend Could Not Access Database in Task 3):**
 In Task 3, frontend was attached exclusively to frontend-network, while db was attached exclusively to backend-network. Docker does not route traffic across separate custom bridge networks, creating a network isolation boundary that prevented frontend from accessing db. Only backend (connected to both networks) could communicate across both tiers.
 
-Bridge Mode vs. Host Network Mode:
-
+**Bridge Mode vs. Host Network Mode:**
 Bridge Mode: Isolates the container inside a private software network namespace on the host. Ports must be explicitly mapped using -p to be publicly accessible.
 
-Host Network Mode: Removes container network isolation, sharing the host machine's IP address and network stack directly. No port mapping (-p) is used or required, offering lower network overhead at the cost of network isolation.
+**Host Network Mode:**
+Removes container network isolation, sharing the host machine's IP address and network stack directly. No port mapping (-p) is used or required, offering lower network overhead at the cost of network isolation.
 
 ---
 
@@ -365,13 +362,13 @@ Create a LinkedIn post about the Docker networking modes explored, one key lesso
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-docker-aws-activity-7511374913434177536-36K2?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU`
 
 ---
 
 #### LinkedIn Post Screenshot
 
-Add a screenshot of the published LinkedIn post here.
+![Linkedin Post](screenshots/wk11-ass3p.png)
 
 ---
 

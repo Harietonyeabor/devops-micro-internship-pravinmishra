@@ -26,7 +26,7 @@ Add a screenshot of the terminal showing successful completion of:
 docker pull nginx:alpine
 ```
 
-Add your screenshot here.
+![Nginx alpine](screenshots/nginx-alpine.png)
 
 ---
 
@@ -38,7 +38,7 @@ Add a screenshot of the terminal showing the created host directory:
 $HOME/nginx-logs
 ```
 
-Add your screenshot here.
+![host directory](screenshots/log-dir.png)
 
 ---
 
@@ -56,7 +56,7 @@ The output must show the `myweb` container with:
 0.0.0.0:80->80/tcp
 ```
 
-Add your screenshot here.
+![port mapping](screenshots/port-mapping.png)
 
 ---
 
@@ -65,12 +65,12 @@ Add your screenshot here.
 Add a browser screenshot showing the Nginx Welcome Page at:
 
 ```text
-http://<YOUR-VM-PUBLIC-IP>
+http://<http://34.207.80.254/>
 ```
 
 Ensure that the VM public IP is visible in the address bar. Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![nginx welcome page](screenshots/wel-2nginx.png)
 
 ---
 
@@ -84,7 +84,7 @@ $HOME/nginx-logs
 
 The output must show `access.log`, `error.log`, and an access-log entry created when you opened the Nginx page.
 
-Add your screenshot here.
+![log files](screenshots/log-files.png)
 
 ---
 
@@ -97,7 +97,7 @@ docker stop myweb
 docker rm myweb
 ```
 
-Add your screenshot here.
+![container removed](screenshots/con-stp-rm.png)
 
 ---
 
@@ -111,7 +111,7 @@ $HOME/nginx-logs
 
 The access log must retain its content after the container has been removed.
 
-Add your screenshot here.
+![log persist](screenshots/log-persist.png)
 
 ---
 
@@ -127,7 +127,7 @@ Deploy backend and frontend containers that share data through a named Docker Vo
 
 Add a screenshot of the terminal showing the `two-tier-app` project structure, including separate `backend` and `frontend` directories with a `Dockerfile` and `index.js` file in each.
 
-Add your screenshot here.
+![2 tier app](screenshots/proj-struc.png)
 
 ---
 
@@ -139,7 +139,7 @@ Add a screenshot of the terminal showing `mynetwork` in:
 docker network ls
 ```
 
-Add your screenshot here.
+![mynetwork](screenshots/doc-netwrk.png)
 
 ---
 
@@ -151,7 +151,7 @@ Add a screenshot of the terminal showing `shared-data` in:
 docker volume ls
 ```
 
-Add your screenshot here.
+![shared-date](screenshots/doc-vol.png)
 
 ---
 
@@ -159,7 +159,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing the completed backend `Dockerfile`.
 
-Add your screenshot here.
+![Dockerfile](screenshots/be-dof.png)
 
 ---
 
@@ -167,7 +167,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing successful completion of the `backend-app:latest` image build.
 
-Add your screenshot here.
+![BE app latest](screenshots/succ-comp-be.png)
 
 ---
 
@@ -181,7 +181,7 @@ docker ps
 
 The output must show the running `backend` container.
 
-Add your screenshot here.
+![BE container](screenshots/be-con.png)
 
 ---
 
@@ -189,7 +189,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing the completed frontend `Dockerfile`.
 
-Add your screenshot here.
+![FE Dockerfile](screenshots/fe-df.png)
 
 ---
 
@@ -197,7 +197,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing successful completion of the `frontend-app:latest` image build.
 
-Add your screenshot here.
+![FE Latest](screenshots/fe-imgb.png)
 
 ---
 
@@ -215,7 +215,7 @@ The output must show both `backend` and `frontend` containers running. Only `fro
 0.0.0.0:80->80/tcp
 ```
 
-Add your screenshot here.
+![BE and FE](screenshots/d-ps-n.png)
 
 ---
 
@@ -229,7 +229,7 @@ The output must include:
 Data written: Hello from Backend!
 ```
 
-Add your screenshot here.
+![Hello from BE](screenshots/hello-be.png)
 
 ---
 
@@ -243,7 +243,7 @@ Hello from Backend!
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![Hello BE](screenshots/n-hbe.png)
 
 ---
 
@@ -257,7 +257,7 @@ Test Data 1
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![Test Date 1](screenshots/test-data1.png)
 
 ---
 
@@ -271,7 +271,7 @@ Test Data 2 - New Update
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![Test Date 2](screenshots/test-d-2.png)
 
 ---
 
@@ -279,7 +279,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing the `frontend` and `backend` containers removed and recreated using the same `shared-data` Docker Volume.
 
-Add your screenshot here.
+![FE and BE container](screenshots/recreated.png)
 
 ---
 
@@ -295,7 +295,7 @@ This proves that the `shared-data` Docker Volume outlived both application conta
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![Shared Date](screenshots/test-d-2-1.png)
 
 ---
 
@@ -308,13 +308,25 @@ Write a short explanation covering:
 - How Task 2 proved Docker Volume persistence
 - Why Docker Volumes are commonly used for application data
 
-Write your explanation here.
+Difference Between a Bind Mount and a Docker Volume:
+Bind Mounts: Link a specific, user-defined directory on the host machine’s filesystem (e.g., $HOME/nginx-logs) directly into a container directory. You have total control over the exact host path, making them ideal when host-level file access or direct inspection is required (such as logs or local development code).
+
+Docker Volumes: Managed entirely by Docker and stored within a dedicated area of the host filesystem managed by Docker (/var/lib/docker/volumes/). They are decoupled from the host's directory structure, making them portable, secure, and the preferred standard for production application data.
+
+How Task 1 Proved Bind Mount Persistence:
+In Task 1, an Nginx container was deployed with a bind mount linking $HOME/nginx-logs to /var/log/nginx. After browsing the application to generate live traffic, the Nginx container was completely stopped and removed (docker rm myweb). Checking the host directory afterwards confirmed that access.log and error.log remained fully intact on the EC2 host, proving that bind mounts allow data to survive container deletion.
+
+How Task 2 Proved Docker Volume Persistence:
+In Task 2, a two-tier Node.js application used a shared Docker Volume (shared-data). The backend container wrote dynamic updates (Test Data 2 - New Update) to the volume, and the frontend read them. After completely removing both the backend and frontend containers, they were recreated from scratch using the same volume. When the application URL was accessed, the browser still displayed Test Data 2 - New Update, proving that Docker Volumes outlive container lifecycles.
+
+Why Docker Volumes Are Commonly Used for Application Data:
+Docker Volumes are the preferred mechanism for persisting data in production because they are managed entirely by Docker, isolate storage from container lifecycles, and can be safely shared across multiple containers simultaneously. This ensures that stateful services (like databases and file uploads) are protected during container upgrades, scaling, or replacements.
 
 ---
 
 # Public Application URL
 
-**Application URL:** `Add your VM public IP URL here`
+**Application URL:** `http://34.207.80.254/`
 
 ---
 
@@ -330,13 +342,15 @@ Create a LinkedIn post about Docker Volumes and Bind Mounts, including one diffe
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/d-jcGDqk`
 
 ---
 
 #### LinkedIn Post Screenshot
 
 Add a screenshot of the published LinkedIn post here. Include a screenshot of the application displaying shared data.
+
+![Published Linkedin](screenshots/ass-4-pst-dl.png)
 
 ---
 

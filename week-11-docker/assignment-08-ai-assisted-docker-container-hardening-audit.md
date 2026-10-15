@@ -33,7 +33,7 @@ docker-audit.sh
 SKILL.md
 ```
 
-Add your screenshot here.
+![alt text](screenshots/doc-8-1.png)
 
 ---
 
@@ -49,7 +49,7 @@ Add the supplied `docker-audit` skill to Claude Code and confirm that it is avai
 
 Add a screenshot of Claude Code showing `docker-audit` in the available skill list.
 
-Add your screenshot here.
+![alt text](screenshots/doc-8-2.png)
 
 ---
 
@@ -70,7 +70,7 @@ Add a terminal screenshot showing:
 - Your full name
 - The usage message displayed when the script runs without a container name
 
-Add your screenshot here.
+![alt text](screenshots/doc-8-3.png)
 
 ---
 
@@ -90,7 +90,7 @@ Add a terminal screenshot showing:
 - `docker ps`
 - The audit command using the selected target container name
 
-Add your screenshot here.
+![alt text](screenshots/doc-8-4.png)
 
 ---
 
@@ -98,7 +98,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing the initial Docker audit results.
 
-Add your screenshot here.
+![alt text](screenshots/doc-8-5.png)
 
 ---
 
@@ -119,7 +119,9 @@ Add a Claude Code screenshot showing:
 - Recommended manual fix
 - Verification method
 
-Add your screenshot here.
+![alt text](screenshots/doc-8-6a.png)
+![alt text](screenshots/doc-8-6b.png)
+![alt text](screenshots/doc-8-6c.png)
 
 ---
 
@@ -135,7 +137,7 @@ Manually fix one WARN or FAIL finding from the initial audit.
 
 Add a screenshot of the updated Dockerfile or `docker-compose.yml` showing the selected hardening fix.
 
-Add your screenshot here.
+![alt text](screenshots/doc-8-7.png)
 
 ---
 
@@ -143,7 +145,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing your full name and the rebuilt or recreated service/container running successfully.
 
-Add your screenshot here.
+![alt text](screenshots/doc-8-8.png)
 
 ---
 
@@ -163,7 +165,7 @@ Add a terminal screenshot showing:
 - The updated running container
 - The final audit report
 
-Add your screenshot here.
+![alt text](screenshots/doc-8-9.png)
 
 ---
 
@@ -176,7 +178,14 @@ Write a short comparison covering:
 - Final audit result
 - Security benefit of the improvement
 
-Write your comparison here.
+Before-and-After Comparison
+Initial audit finding: The container ran as the root user (User: 'root') and used a mutable, unpinned image tag (nginx:latest).
+
+Dockerfile or Docker Compose change applied: Updated the Dockerfile to pin a specific secure version (nginx:1.25.3-alpine), updated Nginx configuration to listen on a non-privileged port (8080), and set a non-root user (USER 101) along with necessary file permissions for cache, run, and log directories.
+
+Final audit result: The audit passed successfully with checks confirming execution as a non-root user (101) and the use of a pinned image tag (my-hardened-nginx:1.25.3), while successfully avoiding privileged port usage.
+
+Security benefit of the improvement: Running as a non-root user ensures that if the containerized application is compromised, the attacker does not gain root-level access to the host system. Pinning a specific image version guarantees deployment consistency and prevents unexpected changes from mutable tags.
 
 ---
 
@@ -188,13 +197,17 @@ Create a LinkedIn post about the container security checks you performed, one ha
 
 ### Evidence
 
-**LinkedIn Post URL:** `Add your LinkedIn post URL here`
+Goal
+Create a LinkedIn post about the container security checks you performed, one hardening improvement you applied, and why the improvement matters.
+
+
+**LinkedIn Post URL:** `https://lnkd.in/p/dT5kwXNV`
 
 #### LinkedIn Post Screenshot
 
 Add a screenshot of the published LinkedIn post, including the final audit result.
 
-Add your screenshot here.
+![Linkedin Post](screenshots/last-doc-linkpost.png)
 
 ---
 

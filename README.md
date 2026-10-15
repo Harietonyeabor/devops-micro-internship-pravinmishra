@@ -101,11 +101,11 @@ Week 06 → AWS Cloud
 Week 10 → Azure DevOps CI/CD 
  [![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/) 
 
-<!-- Week 11 → Docker -->
-<!-- [![Week 11 – Docker](./badges/week-11.svg)](./week-11-docker/) -->
+Week 11 → Docker 
+ [![Week 11 – Docker](./badges/week-11.svg)](./week-11-docker/) 
 
-<!-- Week 12 → Kubernetes -->
-<!-- [![Week 12 – K8s](./badges/week-12.svg)](./week-12-kubernetes/) -->
+Week 12 → Kubernetes 
+ [![Week 12 – K8s](./badges/week-12.svg)](./week-12-kubernetes/) 
 
 <!-- Week 13 → Final Project / Capstone -->
 <!-- [![Week 13 – Capstone](./badges/week-13.svg)](./week-13-final-project/) -->
@@ -142,8 +142,8 @@ Week 10 → Azure DevOps CI/CD
 | 08 | Terraform | ✅ Completed  | ✅ Completed  | [Week08-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-aws-terraform-activity-7500200458670657536-Xfao?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) | [Week08-Blog](https://medium.com/@harietogochukwu/why-i-let-an-ai-agent-audit-my-aws-infrastructure-and-why-i-still-refuse-to-let-it-run-terraform-732665e8b084?sharedUserId=harietogochukwu) |
 | 09 | Ansible | ✅ Completed | ✅ Completed | [Week09-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-terraform-ansible-activity-7504594016697585668-z09b?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) | [Week09-Blog](https://medium.com/@harietogochukwu/from-code-to-cloud-safely-when-automation-knows-what-to-do-and-when-to-stop-6f5bd95e473d) |
 | 10 | Azure DevOps (CI/CD) | ✅ Completed | ✅ Completed | [Week10-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-azuredevops-cicd-activity-7506395972898471936-FSGc?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) | [Week10-Blog](https://medium.com/@harietogochukwu/i-let-an-ai-triage-my-broken-ci-cd-pipeline-heres-why-i-refused-to-give-it-the-car-keys-67492adbcf22) |
-| 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
-| 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
+| 11 | Docker | ✅ Completed | ✅ Completed | [Week11-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_softwareengineering-webdevelopment-fullstack-activity-7515802204235235329-TFbo?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) |  [Week11-Blog](https://medium.com/@harietogochukwu/breaking-free-from-it-works-on-my-machine-my-8-step-journey-mastering-docker-9634d81f74c8) |
+| 12 | Kubernetes | ✅ Completed | ✅ Completed | [Week12-Post](https://www.linkedin.com/posts/henrietta-ogochukwu-onyeabor_devops-kubernetes-cloudcomputing-activity-7516381184004853761-cfB4?utm_source=share&utm_medium=member_desktop&rcm=ACoAACLZGVcB6FzOlcovzi-lUsceaYDsGRsJUSU) |  [Week12-Blog](https://medium.com/@harietogochukwu/the-day-my-app-broke-in-production-and-how-11-kubernetes-projects-saved-me-5d09b9c9f24c)  |
 | 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
 
 **Status:** ⬜ Not Started &nbsp;|&nbsp; 🔄 In Progress &nbsp;|&nbsp; ✅ Completed<br>
