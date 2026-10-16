@@ -98,7 +98,7 @@ Update NGINX to 1.23.1, observe the rollout, and return to the previous stable r
 
 #### Screenshot 08 — Rollback command and rollout status showing successful completion
 
-![alt text](sucs-8.png)
+![alt text](screenshots/sucs-8.png)
 
 ---
 
@@ -162,7 +162,7 @@ I also scaled my Deployment from two Pods to five and back to two!
 
 #### Screenshot 12 — Published WhatsApp Status showing your Kubernetes Deployment message and generated DMI leaderboard progress link
 
-Add your screenshot here.
+
 
 A draft or editing screen is not sufficient.
 

@@ -236,11 +236,11 @@ Share what you learned about Kubernetes liveness probes, container restarts, and
 
 #### Screenshot 12 — Published LinkedIn post
 
-Add your screenshot here.
+![Linkedin Post](screenshots/ass6-wk11-LinkdPost.png)
 
 #### Linkedin post URL
 
-Add URl here
+https://lnkd.in/p/dWcXGsaG
 
 ---
 
