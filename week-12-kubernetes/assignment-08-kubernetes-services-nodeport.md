@@ -240,11 +240,11 @@ Share Your NodePort Service Learning on LinkedIn
 
 #### Screenshot 14 — Published LinkedIn post about your NodePort Service lab
 
-Add your screenshot here.
+![Linkedin Post](screenshots/ass8-wk12-kub.png)
 
 #### Linkedin post link
 
-Add your Linkdin post link.
+https://lnkd.in/p/dDQMsATc
 
 ---
 

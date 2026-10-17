@@ -234,7 +234,7 @@ Generate CPU load in one NGINX Pod and observe how HPA responds.
 
 If you skip this task, write “Not completed — optional” and leave the remaining Task 6 placeholders blank.
 
-Task status: Add your status here.
+Task status: Completed
 
 #### Screenshot 11 — Terminal showing the CPU-load command running inside the selected Pod
 

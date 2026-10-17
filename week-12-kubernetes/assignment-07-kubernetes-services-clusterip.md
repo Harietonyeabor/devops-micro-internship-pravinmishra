@@ -277,11 +277,11 @@ Share what you learned about ClusterIP Services, Kubernetes DNS, selectors, and 
 
 #### Screenshot 18 — Published LinkedIn post
 
-Add your screenshot here.
+![Linkedin Post](screenshots/ass7-wk11-kub.png) 
 
 #### Linkedin post link
 
-Paste your link here
+https://lnkd.in/p/dKVWACkc
 
 ---
 
