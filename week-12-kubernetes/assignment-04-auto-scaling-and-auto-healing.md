@@ -238,13 +238,13 @@ Task status: Completed
 
 #### Screenshot 11 — Terminal showing the CPU-load command running inside the selected Pod
 
-Add your screenshot here if completed.
+
 ![alt text](screenshots/scrn11-kb-ass4.png)
 ---
 
 #### Screenshot 12 — Output of `kubectl get hpa` and `kubectl get pods` while HPA evaluates or changes the replica count
 
-Add your screenshot here if completed.
+
 ![alt text](screenshots/scrn-12-kb-a4.png)
 
 ---
@@ -262,7 +262,6 @@ Yes. When CPU load was generated inside the NGINX pod, the HPA detected utilizat
 
 Add your answer here, or write “Not applicable — scaling occurred.”
 Insufficient CPU request definitions on the deployment containers, or Metrics Server failing to provide resource metrics.
-
 
 ---
 

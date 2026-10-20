@@ -614,11 +614,11 @@ Share the incident-triage workflow you completed and explain the role of human c
 
 #### Screenshot 20 — Published LinkedIn post about your Kubernetes incident-triage workflow
 
-Add your screenshot here.
+![Linkedin Post](screenshots/ass11-kub.png)
 
 ### LinkedIn Post URL
 
-Add your published LinkedIn post URL here.
+https://lnkd.in/p/dkVn35i6
 
 ---
 
