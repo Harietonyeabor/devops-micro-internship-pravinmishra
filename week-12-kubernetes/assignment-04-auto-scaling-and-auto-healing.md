@@ -260,7 +260,6 @@ Yes. When CPU load was generated inside the NGINX pod, the HPA detected utilizat
 
 **2. If scaling did not happen, what are two possible reasons?**
 
-Add your answer here, or write “Not applicable — scaling occurred.”
 Insufficient CPU request definitions on the deployment containers, or Metrics Server failing to provide resource metrics.
 
 ---

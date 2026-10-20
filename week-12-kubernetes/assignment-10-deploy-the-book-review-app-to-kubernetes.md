@@ -233,7 +233,7 @@ Explain your three-tier architecture, demonstrate the working application, and s
 
 #### Screenshot 20 — Published LinkedIn post about your Book Review App deployment on Kubernetes
 
-![alt text](screenshots/ass10-wk11-kb.png)
+![Linkedin Post](screenshots/ass10-wk11-kb.png)
 
 ### LinkedIn Post URL
 

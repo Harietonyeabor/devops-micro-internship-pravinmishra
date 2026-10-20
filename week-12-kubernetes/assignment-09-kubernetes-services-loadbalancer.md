@@ -235,11 +235,11 @@ Share what you learned about exposing an NGINX application publicly through a Lo
 
 #### Screenshot 14 — Published LinkedIn post about your LoadBalancer lab on AKS
 
-Add your screenshot here.
+![Linkedin Post](screenshots/ass9-wk12-kub.png)
 
 #### LinkedIn post link
 
-Add your link here.
+https://lnkd.in/p/g47teibm
 
 ---
 
